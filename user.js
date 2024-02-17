@@ -258,8 +258,8 @@ user_pref("dom.webnotifications.serviceworker.enabled", false);
 
 // Enable Firefox's built in cookie banner auto-reject
 user_pref("browser.promo.cookiebanners.enabled", true);
-user_pref("cookiebanners.service.mode", 1);
-user_pref("cookiebanners.service.mode.privateBrowsing", 1);
+user_pref("cookiebanners.service.mode", 2);
+user_pref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // Deprecated from codebase thus probably not working in Firefox 121++
 user_pref("dom.image-lazy-loading.enabled", false);
