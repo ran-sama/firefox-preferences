@@ -286,6 +286,7 @@ user_pref("media.videocontrols.picture-in-picture.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 user_pref("messaging-system.rsexperimentloader.enabled", false);
 user_pref("security.tls.version.enable-deprecated", false);
+user_pref("browser.tabs.cardPreview.enabled", false);
 
 // Disable Firefox View and Sync
 user_pref("identity.fxaccounts.enabled", false);
