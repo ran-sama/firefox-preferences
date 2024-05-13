@@ -36,7 +36,7 @@ toolbarbutton:not(#bookmarks-menu-button):not(#alltabs-button):not(.bookmark-ite
   -moz-appearance: none !important;
   background-color:LightSkyBlue !important;
 /*  font-weight: bold !important;*/
-  color:black!important;
+  color: black !important;
 }
 .menupopup-arrowscrollbox,
 menupopup > menuitem , menupopup > menu {
@@ -54,7 +54,7 @@ menupopup > menuitem, menupopup > menu {
   padding-bottom: 30px !important;
 }
 #navigator-toolbox {
-  border-bottom: 1px solid rgb(50,50,52) !important;
+  border-bottom: 1px solid #323234 !important;
 }
 .tabbrowser-tab[soundplaying] .tab-background {
   background-color: #634d80 !important;
