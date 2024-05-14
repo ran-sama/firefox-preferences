@@ -146,6 +146,8 @@ user_pref("browser.send_pings", false);
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
+user_pref("geo.enabled", false);
+user_pref("dom.push.serverURL", "");
 
 // Disable Firefox telemetry implants from spying on your browser usage
 user_pref("toolkit.telemetry.archive.enabled", false);
@@ -183,6 +185,14 @@ user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.predictor.enabled", false);
 user_pref("network.predictor.enable-prefetch", false);
 user_pref("network.prefetch-next", false);
+
+/* DoH and ECH are good inventions, but the default providers have unclear privacy policies
+0 = Firefox or Mozilla decides what is used
+1 = ask System DNS + TRR and use the first result
+2 = use TRR and System DNS only as fallback
+3 = use only TRR if IP of the DoH server was found
+4 = not used
+5 = disabled due to the user's selection */
 user_pref("network.trr.mode", 5);
 
 // Disable the forced welcome page, "studies/experiments" and captive portal scanner
@@ -355,7 +365,8 @@ https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprin
 user_pref("browser.contentblocking.category", "custom");
 user_pref("privacy.fingerprintingProtection", true);
 user_pref("privacy.fingerprintingProtection.pbmode", true);
-user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceSize,+JSDateTimeUTC,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLRenderInfo,+JSLocale,+NavigatorHWConcurrency");
+user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceSize,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLRenderInfo,+JSLocale,+NavigatorHWConcurrency");
+//,+JSDateTimeUTC
 
 // If you are on Linux you can hide this fact as well
 //user_pref("general.oscpu.override", "Windows NT 10.0; Win64; x64");
