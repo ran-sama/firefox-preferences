@@ -181,6 +181,7 @@ user_pref("browser.uitour.url", "");
 user_pref("browser.places.speculativeConnect.enabled", false);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("network.dns.disablePrefetch", true);
+user_pref("network.preconnect", false);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.predictor.enabled", false);
 user_pref("network.predictor.enable-prefetch", false);
@@ -371,4 +372,7 @@ user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceS
 // If you are on Linux you can hide this fact as well
 //user_pref("general.oscpu.override", "Windows NT 10.0; Win64; x64");
 //user_pref("general.platform.override", "Win32");
-//user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0");
+//user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
+
+// Ensure links opened from other applications don't end up in existing Temporary Containers
+user_pref("browser.link.force_default_user_context_id_for_external_opens", true);
