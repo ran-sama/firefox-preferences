@@ -90,7 +90,7 @@ WindowScreenXY
 
 ![alt text[]()](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/test_may_2024.png)
 
-Many cloud-based cyber security providers (you know which one) try to lock you out if you disable too many APIs in your browser (bot-like behaviour). Automatically denying access to an API is safer than disabling it, else websites may lock you out.
+Many cloud-based cyber security providers (you know which one) try to lock you out if you disable too many APIs in your browser (bot-like behaviour). Automatically denying access to an API is safer than disabling it, whilst still not sending any private data.
 
 ## Installation and directories:
 on Windows
