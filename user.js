@@ -384,6 +384,11 @@ user_pref("browser.link.force_default_user_context_id_for_external_opens", true)
 /* How to completely destroy user trust and sink yourself:
 https://blog.mozilla.org/en/products/firefox/firefox-search-update/
 Don't want to share any of our private data, you absolute gobshites */
+user_pref("browser.search.serpEventTelemetry.enabled", false);
+user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
+
+// Less BS from Mozilla
+user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("toolkit.telemetry.dap_enabled", false);
 user_pref("toolkit.telemetry.dap_helper", "");
 user_pref("toolkit.telemetry.dap_leader", "");
@@ -398,11 +403,6 @@ user_pref("browser.shopping.experience2023.ads.userEnabled", false);
 user_pref("browser.shopping.experience2023.survey.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
-
-// Less BS from Mozilla
-user_pref("browser.preferences.moreFromMozilla", false);
-user_pref("browser.search.serpEventTelemetry.enabled", false);
-user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
 
 /* A Cross-Protocol Attack on the TLS Protocol (No Google SSL False Start):
 https://www.cosic.esat.kuleuven.be/publications/article-2216.pdf
