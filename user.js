@@ -381,9 +381,9 @@ user_pref("privacy.fingerprintingProtection", true);
 user_pref("privacy.fingerprintingProtection.pbmode", true);
 user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceSize,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLRenderInfo,+JSLocale,+NavigatorHWConcurrency");
 
-/* Supported targets:
+/* https://searchfox.org/mozilla-release/source/toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs#22
 [{"firstPartyDomain":"domain1.example.com","overrides":"-RuleA"},{"thirdPartyDomain":"domain2.example.com","overrides":"+RuleB"}]
-firstPartyDomain, thirdPartyDomain, overrides */
+Supported targets: firstPartyDomain, thirdPartyDomain, overrides */
 user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"abrahamjuliot.github.io\",\"overrides\":\"+JSDateTimeUTC\"}]");
 
 // If you are on Linux you can hide this fact as well
