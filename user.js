@@ -386,6 +386,8 @@ https://blog.mozilla.org/en/products/firefox/firefox-search-update/
 Don't want to share any of our private data, you absolute gobshites */
 user_pref("browser.search.serpEventTelemetry.enabled", false);
 user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
+user_pref("toolkit.shopping.ohttpRelayURL", "");
+user_pref("toolkit.shopping.ohttpConfigURL", "");
 
 // Less BS from Mozilla
 user_pref("browser.preferences.moreFromMozilla", false);
@@ -393,8 +395,6 @@ user_pref("toolkit.telemetry.dap_enabled", false);
 user_pref("toolkit.telemetry.dap_helper", "");
 user_pref("toolkit.telemetry.dap_leader", "");
 user_pref("toolkit.shopping.environment", "");
-user_pref("toolkit.shopping.ohttpRelayURL", "");
-user_pref("toolkit.shopping.ohttpConfigURL", "");
 user_pref("browser.shopping.experience2023.optedIn", 0);
 user_pref("browser.shopping.experience2023.active", false);
 user_pref("browser.shopping.experience2023.enabled", false);
@@ -404,7 +404,7 @@ user_pref("browser.shopping.experience2023.survey.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
 
-/* A Cross-Protocol Attack on the TLS Protocol (No Google SSL False Start):
+/* A Cross-Protocol Attack on the TLS Protocol (due to Google SSL False Start):
 https://www.cosic.esat.kuleuven.be/publications/article-2216.pdf
 extensions to the protocol such as the "False start" that try to reduce protocol round-trips by sending
 the client's application data before the peer's finished message is verified, are at risk. This attack
