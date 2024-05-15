@@ -207,6 +207,7 @@ user_pref("experiments.enabled", false);
 user_pref("extensions.formautofill.available", "off");
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
+user_pref("extensions.experiments.enabled", false);
 user_pref("extensions.pocket.api", "");
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.pocket.site", "");
