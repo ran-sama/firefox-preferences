@@ -8,7 +8,6 @@
 //user_pref("browser.toolbars.bookmarks.visibility", "always");
 //user_pref("browser.uidensity", 1);
 //user_pref("browser.urlbar.autoFill", false);
-//user_pref("captivedetect.canonicalURL", "");
 //user_pref("media.hardwaremediakeys.enabled", false);
 //user_pref("network.dns.disableIPv6", true);
 //user_pref("network.protocol-handler.external.mailto", false);
@@ -144,6 +143,7 @@ user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("beacon.enabled", false);
 user_pref("browser.send_pings", false);
 user_pref("browser.ping-centre.telemetry", false);
+user_pref("captivedetect.canonicalURL", "");
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
 user_pref("dom.push.serverURL", "");
@@ -196,7 +196,7 @@ user_pref("network.prefetch-next", false);
 5 = disabled due to the user's selection */
 user_pref("network.trr.mode", 5);
 
-// Disable the forced welcome page, "studies/experiments" and captive portal scanner
+// Disable the forced welcome page, studies and experiments
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
