@@ -394,14 +394,15 @@ user_pref("browser.shopping.experience2023.survey.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
 
-/* Prevent TLS 1.3 replay attacks through 0-RTT data, important read:
-https://labs.portcullis.co.uk/presentations/playback-a-tls-1-3-story-2/
-Also never downgrade your secure Firefox certs to Windows certs and AV vendor certs */
-user_pref("network.http.http3.enable_0rtt", false);
-user_pref("security.tls.enable_0rtt_data", false);
+// Never downgrade your secure Firefox certs to Windows certs and AV vendor certs
 user_pref("security.tls.version.enable-deprecated", false);
 user_pref("security.enterprise_roots.enabled", false);
 user_pref("security.certerrors.mitm.auto_enable_enterprise_roots", false);
+
+/* https://labs.portcullis.co.uk/presentations/playback-a-tls-1-3-story-2/
+Prevent TLS 1.3 replay attacks through 0-RTT data */
+user_pref("security.tls.enable_0rtt_data", false);
+user_pref("network.http.http3.enable_0rtt", false);
 
 /* A Cross-Protocol Attack on the TLS Protocol (due to Google SSL False Start):
 https://www.cosic.esat.kuleuven.be/publications/article-2216.pdf
