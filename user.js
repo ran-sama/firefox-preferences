@@ -146,7 +146,6 @@ user_pref("browser.send_pings", false);
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
-user_pref("geo.enabled", false);
 user_pref("dom.push.serverURL", "");
 
 // Disable Firefox telemetry implants from spying on your browser usage
