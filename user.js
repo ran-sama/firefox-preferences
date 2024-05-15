@@ -310,7 +310,6 @@ user_pref("browser.tabs.firefox-view-newIcon", false);
 user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
 
 // New BS suggestions in Firefox 118+ to annoy users
-user_pref("browser.shopping.experience2023.enabled", false);
 user_pref("extensions.webextensions.restrictedDomains", "");
 user_pref("signon.firefoxRelay.feature", "disabled");
 
