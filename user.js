@@ -380,3 +380,37 @@ user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceS
 
 // Ensure links opened from other applications don't end up in existing Temporary Containers
 user_pref("browser.link.force_default_user_context_id_for_external_opens", true);
+
+/* How to completely destroy user trust and sink yourself:
+https://blog.mozilla.org/en/products/firefox/firefox-search-update/
+Don't want to share any of our private data, you absolute gobshites */
+user_pref("toolkit.telemetry.dap_enabled", false);
+user_pref("toolkit.telemetry.dap_helper", "");
+user_pref("toolkit.telemetry.dap_leader", "");
+user_pref("toolkit.shopping.environment", "");
+user_pref("toolkit.shopping.ohttpRelayURL", "");
+user_pref("toolkit.shopping.ohttpConfigURL", "");
+user_pref("browser.shopping.experience2023.optedIn", 0);
+user_pref("browser.shopping.experience2023.active", false);
+user_pref("browser.shopping.experience2023.enabled", false);
+user_pref("browser.shopping.experience2023.ads.enabled", false);
+user_pref("browser.shopping.experience2023.ads.userEnabled", false);
+user_pref("browser.shopping.experience2023.survey.enabled", false);
+user_pref("browser.shopping.experience2023.autoOpen.enabled", false);
+user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
+
+// Less BS from Mozilla
+user_pref("browser.preferences.moreFromMozilla", false);
+
+/* A Cross-Protocol Attack on the TLS Protocol (No Google SSL False Start):
+https://www.cosic.esat.kuleuven.be/publications/article-2216.pdf
+extensions to the protocol such as the "False start" that try to reduce protocol round-trips by sending
+the client's application data before the peer's finished message is verified, are at risk. This attack
+may be used to obtain the encrypted client's data and decrypt it by calculating the shared key offline */
+user_pref("security.ssl.enable_false_start", false);
+
+/* Tracking Users across the Web via TLS Session Resumption:
+https://arxiv.org/pdf/1810.07304v1.pdf
+https://www.ssl.com/article/tracking-users-with-tls/
+Their technique exploits the session resumption feature implemented in the TLS protocol */
+user_pref("security.ssl.disable_session_identifiers", true);
