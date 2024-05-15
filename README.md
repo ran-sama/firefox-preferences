@@ -1,7 +1,7 @@
 # firefox-preferences
 This repository is simply selecting better default parameters for [built-in anti-fingerprinting](https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc) features and re-enabling old UI and UX features that advanced users like. It also disconnects from services such as "safebrowsing", which are unecessary if you are using just Firefox and uBlock Origin, which already provide great online safety.
 
-## How it works:
+## How it works
 
 Whilst not going into details about all 300+ settings, which you can read in the commented [user.js](https://github.com/ran-sama/firefox-preferences/blob/master/user.js), here is just the anti-fingerprinting module explained:
 ```user_pref("browser.contentblocking.category", "custom");
@@ -86,7 +86,7 @@ WindowScreenXY
 
 </details>
 
-## Site specific rules:
+## Site specific rules
 
 For convenience [granular targets](https://searchfox.org/mozilla-release/source/toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs#22) can be set without having to change a setting for every website. This allows enabling or disabling specific rules for 1st and third-party domains.
 
@@ -119,7 +119,7 @@ user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyD
 
 Many cloud-based cyber security providers (you know which one) try to lock you out if you disable too many APIs in your browser (bot-like behaviour). Automatically denying access to an API is safer than disabling it, whilst still not sending any sensitive data about your client.
 
-## Installation and directories:
+## Installation and directories
 on Windows
 ```
 %appdata%\Mozilla\Firefox\profiles\
