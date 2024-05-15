@@ -402,6 +402,8 @@ user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
 
 // Less BS from Mozilla
 user_pref("browser.preferences.moreFromMozilla", false);
+user_pref("browser.search.serpEventTelemetry.enabled", false);
+user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
 
 /* A Cross-Protocol Attack on the TLS Protocol (No Google SSL False Start):
 https://www.cosic.esat.kuleuven.be/publications/article-2216.pdf
