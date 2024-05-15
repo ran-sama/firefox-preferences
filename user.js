@@ -293,11 +293,11 @@ user_pref("browser.tabs.cardPreview.enabled", false);
 
 // Disable Firefox View and Sync
 user_pref("identity.fxaccounts.enabled", false);
-user_pref("browser.firefox-view.search.enabled", false);
-user_pref("browser.firefox-view.virtual-list.enabled", false);
 user_pref("browser.tabs.firefox-view", false);
 user_pref("browser.tabs.firefox-view-next", false);
 user_pref("browser.tabs.firefox-view-newIcon", false);
+user_pref("browser.firefox-view.search.enabled", false);
+user_pref("browser.firefox-view.virtual-list.enabled", false);
 user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
 
 // New BS suggestions in Firefox 118+ to annoy users
