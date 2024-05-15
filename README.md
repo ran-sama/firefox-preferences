@@ -23,6 +23,9 @@ You can either disable all with ```-AllTargets``` and only enable select feature
    }
 ]
 ```
+```
+[{"firstPartyDomain":"domain1.example.com","overrides":"+Example1"},{"thirdPartyDomain":"domain2.example.com","overrides":"-Example2"}]
+```
 Site specific [granular targets](https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc) can be set without having to change a setting for every website. This allows enabling or disabling specific rules for 1st and third-party domains.
 ```
 user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"abrahamjuliot.github.io\",\"overrides\":\"+JSDateTimeUTC\"}]");
