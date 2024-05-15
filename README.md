@@ -15,11 +15,11 @@ You can either disable all with ```-AllTargets``` and only enable select feature
 [
    {
       "firstPartyDomain":"domain1.example.com",
-      "overrides":"-Example1"
+      "overrides":"+Example1"
    },
    {
       "thirdPartyDomain":"domain2.example.com",
-      "overrides":"+Example"
+      "overrides":"-Example2"
    }
 ]
 ```
