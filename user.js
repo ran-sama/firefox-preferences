@@ -342,6 +342,14 @@ user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 user_pref("messaging-system.rsexperimentloader.enabled", false);
 user_pref("widget.windows.hide_cursor_when_typing", false);
 
+/* How to completely destroy user trust and sink yourself:
+https://blog.mozilla.org/en/products/firefox/firefox-search-update/
+Don't want to share any of our private data, you absolute gobshites */
+user_pref("browser.search.serpEventTelemetry.enabled", false);
+user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
+user_pref("toolkit.shopping.ohttpRelayURL", "");
+user_pref("toolkit.shopping.ohttpConfigURL", "");
+
 /* ATTENTION! Check each setting carefully:
 BELOW IS A SECTION WITH CHANGES THAT MIGHT BREAK STUFF */
 
@@ -361,14 +369,6 @@ user_pref("media.peerconnection.enabled", false);
 
 // Blend in as American to evade tracking
 user_pref("intl.accept_languages", "en-US, en");
-
-/* How to completely destroy user trust and sink yourself:
-https://blog.mozilla.org/en/products/firefox/firefox-search-update/
-Don't want to share any of our private data, you absolute gobshites */
-user_pref("browser.search.serpEventTelemetry.enabled", false);
-user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
-user_pref("toolkit.shopping.ohttpRelayURL", "");
-user_pref("toolkit.shopping.ohttpConfigURL", "");
 
 /* Some new tracking protection methods to be tested
 https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc */
