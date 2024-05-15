@@ -113,7 +113,7 @@ You need valid JSON (RFC 8259) formatting, if set via ```about:config``` you don
 user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"abrahamjuliot.github.io\",\"overrides\":\"+JSDateTimeUTC\"}]");
 ```
 
-## Minimizing metadata without being marked as bot:
+## Minimizing metadata without being marked as bot
 
 ![alt text[]()](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/test_may_2024.png)
 
