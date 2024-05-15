@@ -18,6 +18,10 @@
 //user_pref("sidebar.position_start", false);
 //user_pref("toolkit.winRegisterApplicationRestart", false);
 //user_pref("ui.systemUsesDarkTheme", 0);
+//user_pref("privacy.trackingprotection.cryptomining.enabled", false);
+//user_pref("privacy.trackingprotection.emailtracking.pbmode.enabled", false);
+//user_pref("privacy.trackingprotection.fingerprinting.enabled", false);
+//user_pref("privacy.trackingprotection.pbmode.enabled", false);
 
 // Nuke high-entropy fingerprinting IDs on every launch
 clearPref("app.installation.timestamp");//nanosecond precision timestamp for tracking
@@ -376,7 +380,11 @@ user_pref("browser.contentblocking.category", "custom");
 user_pref("privacy.fingerprintingProtection", true);
 user_pref("privacy.fingerprintingProtection.pbmode", true);
 user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceSize,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLRenderInfo,+JSLocale,+NavigatorHWConcurrency");
-//,+JSDateTimeUTC
+
+/* Supported targets:
+[{"firstPartyDomain":"domain1.example.com","overrides":"-RuleA"},{"thirdPartyDomain":"domain2.example.com","overrides":"+RuleB"}]
+firstPartyDomain, thirdPartyDomain, overrides */
+user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"abrahamjuliot.github.io\",\"overrides\":\"+JSDateTimeUTC\"}]");
 
 // If you are on Linux you can hide this fact as well
 //user_pref("general.oscpu.override", "Windows NT 10.0; Win64; x64");
