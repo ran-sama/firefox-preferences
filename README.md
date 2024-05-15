@@ -11,27 +11,6 @@ user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceS
 ```
 You can either disable all with ```-AllTargets``` and only enable select features with ```+Example1,+Example2,+...``` or you can enable all with ```+AllTargets``` and only disable select features with ```-Example1,-Example2,-...``` . The current selection is ```CSSDeviceSize``` to obfuscate unique screen resolutions, ```JSDateTimeUTC``` to spoof the timezone, ```FontVisibilityBaseSystem``` to hide non-stock OS fonts, ```MediaDevices``` to show a mic and camera as peripherals regardless if they are there or not (pretend to be a laptop), ```SpeechSynthesis``` which can reveal non-english users by foreign TTS voices, ```WebGLRenderInfo``` to hide your graphics vendor, ```JSLocale``` to pretend being en-US, ```NavigatorHWConcurrency``` to hide your most likely excessive unique thread count of your enthousiast CPU.  
 
-```
-[
-   {
-      "firstPartyDomain":"domain1.example.com",
-      "overrides":"+Example1"
-   },
-   {
-      "thirdPartyDomain":"domain2.example.com",
-      "overrides":"-Example2"
-   }
-]
-```
-```
-[{"firstPartyDomain":"domain1.example.com","overrides":"+Example1"},{"thirdPartyDomain":"domain2.example.com","overrides":"-Example2"}]
-```
-Site specific [granular targets](https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc) can be set without having to change a setting for every website. This allows enabling or disabling specific rules for 1st and third-party domains.
-```
-user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"abrahamjuliot.github.io\",\"overrides\":\"+JSDateTimeUTC\"}]");
-```
-You need valid JSON (RFC 8259) formatting, if set via ```about:config``` you don't have to escape characters and Firefox will automatically escape them in the ```prefs.js``` for you.
-
 A comprehensive list of all current options is in the collapsed code-box below which you can expand with the triangle:  
 <details>
 <summary>
@@ -106,6 +85,31 @@ WindowScreenXY
 ```
 
 </details>
+
+Site specific [granular targets](https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc) can be set without having to change a setting for every website. This allows enabling or disabling specific rules for 1st and third-party domains.
+
+
+```
+[
+   {
+      "firstPartyDomain":"domain1.example.com",
+      "overrides":"+Example1"
+   },
+   {
+      "thirdPartyDomain":"domain2.example.com",
+      "overrides":"-Example2"
+   }
+]
+```
+Minified:
+```
+[{"firstPartyDomain":"domain1.example.com","overrides":"+Example1"},{"thirdPartyDomain":"domain2.example.com","overrides":"-Example2"}]
+```
+You need valid JSON (RFC 8259) formatting, if set via ```about:config``` you don't have to escape characters and Firefox will automatically escape them in the ```prefs.js``` for you.
+
+```
+user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"abrahamjuliot.github.io\",\"overrides\":\"+JSDateTimeUTC\"}]");
+```
 
 ## Minimizing metadata without being marked as bot:
 
