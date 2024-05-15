@@ -63,10 +63,10 @@ user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
-user_pref("browser.newtabpage.activity-stream.discoverystream.personalization.modelKeys", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.config", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.endpoints", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.endpointSpocsClear", "");
+user_pref("browser.newtabpage.activity-stream.discoverystream.personalization.modelKeys", "");
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", "");
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
@@ -96,20 +96,20 @@ user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.urlbar.addons.featureGate", false);
 user_pref("browser.urlbar.clipboard.featureGate", false);
 user_pref("browser.urlbar.mdn.featureGate", false);
+user_pref("browser.urlbar.merino.endpointURL", "");
 user_pref("browser.urlbar.pocket.featureGate", false);
-user_pref("browser.urlbar.trending.featureGate", false);
-user_pref("browser.urlbar.weather.featureGate", false);
 user_pref("browser.urlbar.quicksuggest.dataCollection.enabled", false);
 user_pref("browser.urlbar.quicksuggest.enabled", false);
 user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
-user_pref("browser.urlbar.merino.endpointURL", "");
+user_pref("browser.urlbar.trending.featureGate", false);
+user_pref("browser.urlbar.weather.featureGate", false);
 
 // Prevent Firefox 97 download behaviour change
 user_pref("browser.download.always_ask_before_handling_new_types", true);
 user_pref("browser.download.alwaysOpenPanel", true);
-user_pref("browser.download.improvements_to_download_panel", false);
 user_pref("browser.download.folderList", 2);
+user_pref("browser.download.improvements_to_download_panel", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
 user_pref("browser.download.start_downloads_in_tmp_dir", true);
 
@@ -139,18 +139,28 @@ user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("network.cookie.cookieBehavior", 0);
 user_pref("network.cookie.lifetimePolicy", 2);
 
+// Enable Firefox's built in cookie banner auto-reject
+user_pref("browser.promo.cookiebanners.enabled", true);
+user_pref("cookiebanners.service.mode", 2);
+user_pref("cookiebanners.service.mode.privateBrowsing", 2);
+
 // HTML5 beacons, browser pings, captive portal, connection checks
 user_pref("beacon.enabled", false);
-user_pref("browser.send_pings", false);
 user_pref("browser.ping-centre.telemetry", false);
+user_pref("browser.send_pings", false);
 user_pref("captivedetect.canonicalURL", "");
+user_pref("default-browser-agent.enabled", false);
+user_pref("dom.push.serverURL", "");
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
-user_pref("dom.push.serverURL", "");
 
 // Disable Firefox telemetry implants from spying on your browser usage
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("toolkit.telemetry.coverage.opt-out", true);
+user_pref("toolkit.telemetry.dap_enabled", false);
+user_pref("toolkit.telemetry.dap_helper", "");
+user_pref("toolkit.telemetry.dap_leader", "");
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
@@ -159,7 +169,6 @@ user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
-user_pref("toolkit.telemetry.coverage.opt-out", true);
 
 // No crash or error reporting
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);
@@ -181,8 +190,8 @@ user_pref("browser.places.speculativeConnect.enabled", false);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.suggest.enabled.private", false);
 user_pref("network.dns.disablePrefetch", true);
-user_pref("network.preconnect", false);
 user_pref("network.http.speculative-parallel-limit", 0);
+user_pref("network.preconnect", false);
 user_pref("network.predictor.enabled", false);
 user_pref("network.predictor.enable-prefetch", false);
 user_pref("network.prefetch-next", false);
@@ -202,21 +211,26 @@ user_pref("app.normandy.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("experiments.enabled", false);
 
-// Disable bad extensions
-user_pref("extensions.formautofill.available", "off");
-user_pref("extensions.formautofill.addresses.enabled", false);
-user_pref("extensions.formautofill.creditCards.enabled", false);
+// Disable bad extensions and restrictions
 user_pref("extensions.experiments.enabled", false);
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.available", "off");
+user_pref("extensions.formautofill.creditCards.enabled", false);
+user_pref("extensions.getAddons.showPane", false);
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.pocket.api", "");
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.pocket.site", "");
+user_pref("extensions.quarantinedDomains.enabled", false);
+user_pref("extensions.webextensions.restrictedDomains", "");
 
 // Mitigate settings treating the user like a child
-user_pref("devtools.selfxss.count", 10);
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.disableResetPrompt", true);
 user_pref("browser.laterrun.enabled", false);
 user_pref("browser.search.update", false);
+user_pref("devtools.selfxss.count", 10);
+user_pref("dom.block_download_insecure", false);
 user_pref("full-screen-api.transition-duration.enter", "0 0");
 user_pref("full-screen-api.transition-duration.leave", "0 0");
 user_pref("full-screen-api.warning.delay", 0);
@@ -224,15 +238,16 @@ user_pref("full-screen-api.warning.timeout", 0);
 user_pref("general.smoothScroll", false);
 user_pref("general.warnOnAboutConfig", false);
 user_pref("security.dialog_enable_delay", 0);
+user_pref("security.family_safety.mode", 0);
+
+// Allow customization of UI
+user_pref("browser.compactmode.show", true);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
-user_pref("dom.block_download_insecure", false);
 
 // Disables tooltips, privacy leaking thumbnails, screenshots are local without upload, coverage ping
 user_pref("browser.discovery.enabled", false);
 user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.topsites.contile.enabled", false);
-user_pref("extensions.getAddons.showPane", false);
-user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("toolkit.coverage.opt-out", true);
 
@@ -247,62 +262,35 @@ user_pref("network.http.throttle.enable", false);
 user_pref("ui.caretBlinkCount", -1);
 user_pref("widget.windows.window_occlusion_tracking.enabled", false);
 
-/* Force hardware acceleration on a dedicated GPU
-https://support.mozilla.org/en-US/kb/performance-settings */
-user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
-user_pref("layers.acceleration.disabled", false);
-
 // Disable Notification API and Push Spam
 user_pref("alerts.useSystemBackend", false);
 user_pref("alerts.useSystemBackend.windows.notificationserver.enabled", false);
-user_pref("dom.push.enabled", false);
 user_pref("dom.push.connection.enabled", false);
+user_pref("dom.push.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
 
-// Enable Firefox's built in cookie banner auto-reject
-user_pref("browser.promo.cookiebanners.enabled", true);
-user_pref("cookiebanners.service.mode", 2);
-user_pref("cookiebanners.service.mode.privateBrowsing", 2);
-
-// Deprecated from codebase thus probably not working in Firefox 121++
-user_pref("dom.image-lazy-loading.enabled", false);
-user_pref("media.suspend-bkgnd-video.enabled", false);
-user_pref("security.family_safety.mode", 0);
-user_pref("widget.windows.hide_cursor_when_typing", false);
-
-// Firefox 116++ changes
-user_pref("accessibility.force_disabled", 1);
-user_pref("breakpad.reportURL", "");
-user_pref("browser.fixup.alternate.enabled", false);
-user_pref("browser.newtab.preload", false);
-user_pref("browser.promo.focus.enabled", false);
-user_pref("browser.promo.pin.enabled", false);
-user_pref("browser.vpn_promo.enabled", false);
-user_pref("browser.region.network.url", "");
-user_pref("browser.region.update.enabled", false);
-user_pref("browser.taskbar.lists.frequent.enabled", false);
-user_pref("browser.theme.colorway-closet", false);
-user_pref("browser.topsites.contile.endpoint", "");
-user_pref("devtools.debugger.remote-enabled", false);
-user_pref("extensions.quarantinedDomains.enabled", false);
-user_pref("media.videocontrols.picture-in-picture.enabled", false);
-user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
-user_pref("messaging-system.rsexperimentloader.enabled", false);
-user_pref("browser.tabs.cardPreview.enabled", false);
-
-// Disable Firefox View and Sync
-user_pref("identity.fxaccounts.enabled", false);
-user_pref("browser.tabs.firefox-view", false);
-user_pref("browser.tabs.firefox-view-next", false);
-user_pref("browser.tabs.firefox-view-newIcon", false);
+// Disable Firefox View
+user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
 user_pref("browser.firefox-view.search.enabled", false);
 user_pref("browser.firefox-view.virtual-list.enabled", false);
-user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
+user_pref("browser.tabs.firefox-view", false);
+user_pref("browser.tabs.firefox-view-newIcon", false);
+user_pref("browser.tabs.firefox-view-next", false);
 
-// New BS suggestions in Firefox 118+ to annoy users
-user_pref("extensions.webextensions.restrictedDomains", "");
-user_pref("signon.firefoxRelay.feature", "disabled");
+// Enrich your "experience" without suggestions and ads
+user_pref("toolkit.shopping.environment", "");
+user_pref("browser.shopping.experience2023.optedIn", 0);
+user_pref("browser.shopping.experience2023.active", false);
+user_pref("browser.shopping.experience2023.enabled", false);
+user_pref("browser.shopping.experience2023.ads.enabled", false);
+user_pref("browser.shopping.experience2023.ads.userEnabled", false);
+user_pref("browser.shopping.experience2023.survey.enabled", false);
+user_pref("browser.shopping.experience2023.autoOpen.enabled", false);
+user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
+
+// Ensure links opened from other applications don't end up in existing Temporary Containers
+user_pref("browser.link.force_default_user_context_id_for_external_opens", true);
 
 // Allow only latin charset URLs to prevent phishing with exotic chars
 user_pref("network.IDN_show_punycode", true);
@@ -316,14 +304,8 @@ user_pref("pdfjs.enableScripting", false);
 // Spellcheck everything
 user_pref("layout.spellcheckDefault", 2);
 
-// Mozilla has decided to deprecate compact mode and hide it
-user_pref("browser.compactmode.show", true);
-
 // Autoplay if tab gets into focus
 user_pref("media.autoplay.default", 0);
-
-// Disable the disgusting pingsender in Windows task scheduler
-user_pref("default-browser-agent.enabled", false);
 
 // Pressing Backspace will go back a page in the session history as it always has been 
 user_pref("browser.backspace_action", 0);
@@ -331,12 +313,37 @@ user_pref("browser.backspace_action", 0);
 // Hide the List All Tabs icon in Firefox 106
 user_pref("browser.tabs.tabmanager.enabled", false);
 
+// Firefox Sync and Relay
+user_pref("identity.fxaccounts.enabled", false);
+user_pref("signon.firefoxRelay.feature", "disabled");
+
+// Disable promotional content
+user_pref("browser.promo.focus.enabled", false);
+user_pref("browser.promo.pin.enabled", false);
+user_pref("browser.vpn_promo.enabled", false);
+
+// Less BS from Mozilla
+user_pref("accessibility.force_disabled", 1);
+user_pref("breakpad.reportURL", "");
+user_pref("browser.fixup.alternate.enabled", false);
+user_pref("browser.newtab.preload", false);
+user_pref("browser.preferences.moreFromMozilla", false);
+user_pref("browser.region.network.url", "");
+user_pref("browser.region.update.enabled", false);
+user_pref("browser.tabs.cardPreview.enabled", false);
+user_pref("browser.taskbar.lists.frequent.enabled", false);
+user_pref("browser.theme.colorway-closet", false);
+user_pref("browser.topsites.contile.endpoint", "");
+user_pref("devtools.debugger.remote-enabled", false);
+user_pref("dom.image-lazy-loading.enabled", false);
+user_pref("media.suspend-bkgnd-video.enabled", false);
+user_pref("media.videocontrols.picture-in-picture.enabled", false);
+user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
+user_pref("messaging-system.rsexperimentloader.enabled", false);
+user_pref("widget.windows.hide_cursor_when_typing", false);
+
 /* ATTENTION! Check each setting carefully:
 BELOW IS A SECTION WITH CHANGES THAT MIGHT BREAK STUFF */
-
-/* Whilst no site requires WebGPU it is used already for tracking:
-https://arxiv.org/abs/2401.04349 */
-user_pref("dom.webgpu.enabled", false);
 
 // Auto-reject access to Camera, Mic, VR, Geo, Notifications
 user_pref("permissions.default.xr", 2);
@@ -355,6 +362,14 @@ user_pref("media.peerconnection.enabled", false);
 // Blend in as American to evade tracking
 user_pref("intl.accept_languages", "en-US, en");
 
+/* How to completely destroy user trust and sink yourself:
+https://blog.mozilla.org/en/products/firefox/firefox-search-update/
+Don't want to share any of our private data, you absolute gobshites */
+user_pref("browser.search.serpEventTelemetry.enabled", false);
+user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
+user_pref("toolkit.shopping.ohttpRelayURL", "");
+user_pref("toolkit.shopping.ohttpConfigURL", "");
+
 /* Some new tracking protection methods to be tested
 https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc */
 user_pref("browser.contentblocking.category", "custom");
@@ -368,31 +383,14 @@ user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceS
 //user_pref("general.platform.override", "Win32");
 //user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
 
-// Ensure links opened from other applications don't end up in existing Temporary Containers
-user_pref("browser.link.force_default_user_context_id_for_external_opens", true);
+/* Force hardware acceleration on a dedicated GPU
+https://support.mozilla.org/en-US/kb/performance-settings */
+user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
+user_pref("layers.acceleration.disabled", false);
 
-/* How to completely destroy user trust and sink yourself:
-https://blog.mozilla.org/en/products/firefox/firefox-search-update/
-Don't want to share any of our private data, you absolute gobshites */
-user_pref("browser.search.serpEventTelemetry.enabled", false);
-user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
-user_pref("toolkit.shopping.ohttpRelayURL", "");
-user_pref("toolkit.shopping.ohttpConfigURL", "");
-
-// Less BS from Mozilla
-user_pref("browser.preferences.moreFromMozilla", false);
-user_pref("toolkit.telemetry.dap_enabled", false);
-user_pref("toolkit.telemetry.dap_helper", "");
-user_pref("toolkit.telemetry.dap_leader", "");
-user_pref("toolkit.shopping.environment", "");
-user_pref("browser.shopping.experience2023.optedIn", 0);
-user_pref("browser.shopping.experience2023.active", false);
-user_pref("browser.shopping.experience2023.enabled", false);
-user_pref("browser.shopping.experience2023.ads.enabled", false);
-user_pref("browser.shopping.experience2023.ads.userEnabled", false);
-user_pref("browser.shopping.experience2023.survey.enabled", false);
-user_pref("browser.shopping.experience2023.autoOpen.enabled", false);
-user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
+/* Whilst no site requires WebGPU it is used already for tracking:
+https://arxiv.org/abs/2401.04349 */
+user_pref("dom.webgpu.enabled", false);
 
 // Never downgrade your secure Firefox certs to Windows certs and AV vendor certs
 user_pref("security.tls.version.enable-deprecated", false);
@@ -416,3 +414,17 @@ https://arxiv.org/pdf/1810.07304v1.pdf
 https://www.ssl.com/article/tracking-users-with-tls/
 Their technique exploits the session resumption feature implemented in the TLS protocol */
 user_pref("security.ssl.disable_session_identifiers", true);
+
+// Require RFC 5746 to prevent MITM attacks
+user_pref("security.ssl.require_safe_negotiation", true);
+user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
+
+// Disable legacy cipher suites
+user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha", false);//weak
+user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", false);//weak
+user_pref("security.ssl3.ecdhe_rsa_aes_128_sha", false);//weak
+user_pref("security.ssl3.ecdhe_rsa_aes_256_sha", false);//weak
+user_pref("security.ssl3.rsa_aes_128_gcm_sha256", false);//no forward secrecy
+user_pref("security.ssl3.rsa_aes_256_gcm_sha384", false);//no forward secrecy
+user_pref("security.ssl3.rsa_aes_128_sha", false);//no forward secrecy
+user_pref("security.ssl3.rsa_aes_256_sha", false);//no forward secrecy
