@@ -86,7 +86,7 @@ WindowScreenXY
 
 </details>
 
-Site specific [granular targets](https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc) can be set without having to change a setting for every website. This allows enabling or disabling specific rules for 1st and third-party domains.
+Site specific [granular targets](https://searchfox.org/mozilla-release/source/toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs#22) can be set without having to change a setting for every website. This allows enabling or disabling specific rules for 1st and third-party domains.
 
 
 ```
