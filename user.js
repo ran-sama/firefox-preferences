@@ -180,6 +180,7 @@ user_pref("browser.uitour.url", "");
 // Stop data leaks from search suggestions, webRTC and link prefetching
 user_pref("browser.places.speculativeConnect.enabled", false);
 user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.search.suggest.enabled.private", false);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.preconnect", false);
 user_pref("network.http.speculative-parallel-limit", 0);
@@ -301,8 +302,11 @@ user_pref("browser.tabs.cardPreview.enabled", false);
 
 // Disable Firefox View and Sync
 user_pref("identity.fxaccounts.enabled", false);
+user_pref("browser.firefox-view.search.enabled", false);
+user_pref("browser.firefox-view.virtual-list.enabled", false);
 user_pref("browser.tabs.firefox-view", false);
 user_pref("browser.tabs.firefox-view-next", false);
+user_pref("browser.tabs.firefox-view-newIcon", false);
 user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
 
 // New BS suggestions in Firefox 118+ to annoy users
