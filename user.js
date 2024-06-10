@@ -3,7 +3,7 @@
 //user_pref("browser.bookmarks.defaultLocation", "menu________");
 //user_pref("browser.cache.disk.parent_directory", "C:\\\\Users\\\\CENSORED\\\\AppData\\\\Local\\\\Temp\\\\firefox_cache");
 //user_pref("browser.download.dir", "D:\\sorting");
-//user_pref("browser.startup.homepage", "https://www.google.com/?hl=de&nfpr=1&safe=off");
+//user_pref("browser.startup.homepage", "https://www.google.com/?hl=de&nfpr=1&safe=off&ucbcb=1");
 //user_pref("browser.tabs.warnOnClose", true);
 //user_pref("browser.toolbars.bookmarks.visibility", "always");
 //user_pref("browser.uidensity", 1);
@@ -384,7 +384,7 @@ user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceS
 /* https://searchfox.org/mozilla-release/source/toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs#22
 [{"firstPartyDomain":"domain1.example.com","overrides":"-RuleA"},{"thirdPartyDomain":"domain2.example.com","overrides":"+RuleB"}]
 Supported targets: firstPartyDomain, thirdPartyDomain, overrides */
-user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"abrahamjuliot.github.io\",\"overrides\":\"+JSDateTimeUTC\"}]");
+//user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"cloudflare.com\",\"overrides\":\"+AllTargets\"},{\"thirdPartyDomain\":\"cloudflare.com\",\"overrides\":\"+AllTargets\"}]");
 
 // If you are on Linux you can hide this fact as well
 //user_pref("general.oscpu.override", "Windows NT 10.0; Win64; x64");
@@ -436,3 +436,18 @@ user_pref("security.ssl3.rsa_aes_128_gcm_sha256", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_256_gcm_sha384", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_128_sha", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_256_sha", false);//no forward secrecy
+
+// add search engines in about:preferences#search with aliases such as @myengine
+user_pref("browser.urlbar.update2.engineAliasRefresh", true);
+
+// New stuff
+user_pref("browser.contentanalysis.default_allow", false);
+user_pref("browser.urlbar.yelp.featureGate", false);
+user_pref("dom.min_background_timeout_value_without_budget_throttling", 0);
+user_pref("dom.prefetch_dns_for_anchor_http_document", false);
+user_pref("dom.timeout.enable_budget_timer_throttling", false);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
+user_pref("network.dns.prefetch_via_proxy", false);
+user_pref("privacy.fingerprintingProtection.remoteOverrides.enabled", false);
+user_pref("widget.windows.window_occlusion_tracking_display_state.enabled", false);
+user_pref("widget.windows.window_occlusion_tracking_session_lock.enabled", false);
