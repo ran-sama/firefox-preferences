@@ -445,6 +445,7 @@ user_pref("browser.contentanalysis.default_allow", false);
 user_pref("browser.urlbar.yelp.featureGate", false);
 user_pref("dom.min_background_timeout_value_without_budget_throttling", 0);
 user_pref("dom.prefetch_dns_for_anchor_http_document", false);
+lockPref("dom.prefetch_dns_for_anchor_https_document", false);
 user_pref("dom.timeout.enable_budget_timer_throttling", false);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.dns.prefetch_via_proxy", false);
