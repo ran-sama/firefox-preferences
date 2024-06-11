@@ -437,16 +437,20 @@ user_pref("security.ssl3.rsa_aes_256_gcm_sha384", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_128_sha", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_256_sha", false);//no forward secrecy
 
-// add search engines in about:preferences#search with aliases such as @myengine
+// Add search engines in about:preferences#search with aliases such as @myengine
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
 
 // New stuff
 user_pref("browser.contentanalysis.default_allow", false);
 user_pref("browser.urlbar.yelp.featureGate", false);
+user_pref("dom.animations.offscreen-throttling", false);
+user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);
+user_pref("dom.min_background_timeout_value", 0);
 user_pref("dom.min_background_timeout_value_without_budget_throttling", 0);
 user_pref("dom.prefetch_dns_for_anchor_http_document", false);
 user_pref("dom.prefetch_dns_for_anchor_https_document", false);
 user_pref("dom.timeout.enable_budget_timer_throttling", false);
+user_pref("layout.throttle_in_process_iframes", false);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.dns.prefetch_via_proxy", false);
 user_pref("privacy.fingerprintingProtection.remoteOverrides.enabled", false);
