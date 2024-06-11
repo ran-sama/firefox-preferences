@@ -108,6 +108,7 @@ user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 user_pref("browser.urlbar.trending.featureGate", false);
 user_pref("browser.urlbar.weather.featureGate", false);
+user_pref("browser.urlbar.yelp.featureGate", false);
 
 // Prevent Firefox 97 download behaviour change
 user_pref("browser.download.always_ask_before_handling_new_types", true);
@@ -193,7 +194,11 @@ user_pref("browser.uitour.url", "");
 user_pref("browser.places.speculativeConnect.enabled", false);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.suggest.enabled.private", false);
+user_pref("dom.prefetch_dns_for_anchor_http_document", false);
+user_pref("dom.prefetch_dns_for_anchor_https_document", false);
 user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
+user_pref("network.dns.prefetch_via_proxy", false);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.preconnect", false);
 user_pref("network.predictor.enabled", false);
@@ -261,10 +266,18 @@ user_pref("signon.includeOtherSubdomainsInLookup", false);
 user_pref("signon.management.page.breach-alerts.enabled", false);
 
 // STOP THROTTLING HIGH-PERFORMANCE DESKTOPS YOU ABSOLUTE GOBSHITES
+user_pref("dom.animations.offscreen-throttling", false);
+user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);
+user_pref("dom.min_background_timeout_value", 0);
+user_pref("dom.min_background_timeout_value_without_budget_throttling", 0);
+user_pref("dom.timeout.enable_budget_timer_throttling", false);
+user_pref("layout.throttle_in_process_iframes", false);
 user_pref("media.decoder.skip-to-next-key-frame.enabled", false);
 user_pref("network.http.throttle.enable", false);
 user_pref("ui.caretBlinkCount", -1);
 user_pref("widget.windows.window_occlusion_tracking.enabled", false);
+user_pref("widget.windows.window_occlusion_tracking_display_state.enabled", false);
+user_pref("widget.windows.window_occlusion_tracking_session_lock.enabled", false);
 
 // Disable Notification API and Push Spam
 user_pref("alerts.useSystemBackend", false);
@@ -349,10 +362,11 @@ user_pref("widget.windows.hide_cursor_when_typing", false);
 /* How to completely destroy user trust and sink yourself:
 https://blog.mozilla.org/en/products/firefox/firefox-search-update/
 Don't want to share any of our private data, you absolute gobshites */
+user_pref("browser.contentanalysis.default_allow", false);
 user_pref("browser.search.serpEventTelemetry.enabled", false);
 user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
-user_pref("toolkit.shopping.ohttpRelayURL", "");
 user_pref("toolkit.shopping.ohttpConfigURL", "");
+user_pref("toolkit.shopping.ohttpRelayURL", "");
 
 /* ATTENTION! Check each setting carefully:
 BELOW IS A SECTION WITH CHANGES THAT MIGHT BREAK STUFF */
@@ -379,6 +393,7 @@ https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprin
 user_pref("browser.contentblocking.category", "custom");
 user_pref("privacy.fingerprintingProtection", true);
 user_pref("privacy.fingerprintingProtection.pbmode", true);
+user_pref("privacy.fingerprintingProtection.remoteOverrides.enabled", false);
 user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceSize,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLRenderInfo,+JSLocale,+NavigatorHWConcurrency");
 
 /* https://searchfox.org/mozilla-release/source/toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs#22
@@ -439,20 +454,3 @@ user_pref("security.ssl3.rsa_aes_256_sha", false);//no forward secrecy
 
 // Add search engines in about:preferences#search with aliases such as @myengine
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
-
-// New stuff
-user_pref("browser.contentanalysis.default_allow", false);
-user_pref("browser.urlbar.yelp.featureGate", false);
-user_pref("dom.animations.offscreen-throttling", false);
-user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);
-user_pref("dom.min_background_timeout_value", 0);
-user_pref("dom.min_background_timeout_value_without_budget_throttling", 0);
-user_pref("dom.prefetch_dns_for_anchor_http_document", false);
-user_pref("dom.prefetch_dns_for_anchor_https_document", false);
-user_pref("dom.timeout.enable_budget_timer_throttling", false);
-user_pref("layout.throttle_in_process_iframes", false);
-user_pref("network.dns.disablePrefetchFromHTTPS", true);
-user_pref("network.dns.prefetch_via_proxy", false);
-user_pref("privacy.fingerprintingProtection.remoteOverrides.enabled", false);
-user_pref("widget.windows.window_occlusion_tracking_display_state.enabled", false);
-user_pref("widget.windows.window_occlusion_tracking_session_lock.enabled", false);
