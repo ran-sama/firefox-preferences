@@ -74,6 +74,7 @@ user_pref("browser.newtabpage.activity-stream.discoverystream.personalization.mo
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", "");
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+user_pref("browser.newtabpage.activity-stream.feeds.weatherfeed", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
@@ -82,6 +83,7 @@ user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
+user_pref("browser.newtabpage.activity-stream.weather.locationSearchEnabled", false);
 
 // Repair the URL-bar to a more sane behaviour
 user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
@@ -104,8 +106,12 @@ user_pref("browser.urlbar.merino.endpointURL", "");
 user_pref("browser.urlbar.pocket.featureGate", false);
 user_pref("browser.urlbar.quicksuggest.dataCollection.enabled", false);
 user_pref("browser.urlbar.quicksuggest.enabled", false);
+user_pref("browser.urlbar.suggest.pocket", false);
 user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+user_pref("browser.urlbar.suggest.trending", false);
+user_pref("browser.urlbar.suggest.weather", false);
+user_pref("browser.urlbar.suggest.yelp", false);
 user_pref("browser.urlbar.trending.featureGate", false);
 user_pref("browser.urlbar.weather.featureGate", false);
 user_pref("browser.urlbar.yelp.featureGate", false);
@@ -137,6 +143,9 @@ user_pref("privacy.clearOnShutdown.history", true);
 user_pref("privacy.clearOnShutdown.offlineApps", true);
 user_pref("privacy.clearOnShutdown.sessions", true);
 user_pref("privacy.clearOnShutdown.siteSettings", true);
+user_pref("privacy.clearOnShutdown_v2.cache", true);
+user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
+user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
 user_pref("privacy.history.custom", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 
@@ -265,19 +274,22 @@ user_pref("signon.generation.enabled", false);
 user_pref("signon.includeOtherSubdomainsInLookup", false);
 user_pref("signon.management.page.breach-alerts.enabled", false);
 
-// STOP THROTTLING HIGH-PERFORMANCE DESKTOPS YOU ABSOLUTE GOBSHITES
+// STOP THROTTLING PLAYBACK HIGH-PERFORMANCE DESKTOPS YOU ABSOLUTE GOBSHITES
+user_pref("media.decoder.skip-to-next-key-frame.enabled", false);
+user_pref("widget.windows.window_occlusion_tracking.enabled", false);
+user_pref("widget.windows.window_occlusion_tracking_display_state.enabled", false);
+user_pref("widget.windows.window_occlusion_tracking_session_lock.enabled", false);
+
+/* https://testbed.nicon.nl/timeouttest/
+Useless laptop throttling stuff to save battery */
 user_pref("dom.animations.offscreen-throttling", false);
 user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);
 user_pref("dom.min_background_timeout_value", 0);
 user_pref("dom.min_background_timeout_value_without_budget_throttling", 0);
 user_pref("dom.timeout.enable_budget_timer_throttling", false);
 user_pref("layout.throttle_in_process_iframes", false);
-user_pref("media.decoder.skip-to-next-key-frame.enabled", false);
 user_pref("network.http.throttle.enable", false);
 user_pref("ui.caretBlinkCount", -1);
-user_pref("widget.windows.window_occlusion_tracking.enabled", false);
-user_pref("widget.windows.window_occlusion_tracking_display_state.enabled", false);
-user_pref("widget.windows.window_occlusion_tracking_session_lock.enabled", false);
 
 // Disable Notification API and Push Spam
 user_pref("alerts.useSystemBackend", false);
@@ -296,15 +308,15 @@ user_pref("browser.tabs.firefox-view-newIcon", false);
 user_pref("browser.tabs.firefox-view-next", false);
 
 // Enrich your "experience" without suggestions and ads
-user_pref("toolkit.shopping.environment", "");
-user_pref("browser.shopping.experience2023.optedIn", 0);
 user_pref("browser.shopping.experience2023.active", false);
-user_pref("browser.shopping.experience2023.enabled", false);
 user_pref("browser.shopping.experience2023.ads.enabled", false);
 user_pref("browser.shopping.experience2023.ads.userEnabled", false);
-user_pref("browser.shopping.experience2023.survey.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.enabled", false);
 user_pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
+user_pref("browser.shopping.experience2023.enabled", false);
+user_pref("browser.shopping.experience2023.optedIn", 0);
+user_pref("browser.shopping.experience2023.survey.enabled", false);
+user_pref("toolkit.shopping.environment", "");
 
 // Ensure links opened from other applications don't end up in existing Temporary Containers
 user_pref("browser.link.force_default_user_context_id_for_external_opens", true);
@@ -404,7 +416,7 @@ Supported targets: firstPartyDomain, thirdPartyDomain, overrides */
 // If you are on Linux you can hide this fact as well
 //user_pref("general.oscpu.override", "Windows NT 10.0; Win64; x64");
 //user_pref("general.platform.override", "Win32");
-//user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
+//user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0");
 
 /* Force hardware acceleration on a dedicated GPU
 https://support.mozilla.org/en-US/kb/performance-settings */
