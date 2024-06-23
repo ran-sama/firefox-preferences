@@ -276,6 +276,7 @@ user_pref("media.decoder.skip-to-next-key-frame.enabled", false);
 user_pref("widget.windows.window_occlusion_tracking.enabled", false);
 user_pref("widget.windows.window_occlusion_tracking_display_state.enabled", false);
 user_pref("widget.windows.window_occlusion_tracking_session_lock.enabled", false);
+user_pref("media.suspend-background-video.enabled", false);
 
 /* https://testbed.nicon.nl/timeouttest/
 Useless laptop throttling stuff to save battery */
