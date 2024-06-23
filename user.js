@@ -125,27 +125,17 @@ user_pref("browser.download.manager.addToRecentDocs", false);
 user_pref("browser.download.start_downloads_in_tmp_dir", true);
 
 // Clean full history manually with CTRL+SHIFT+DEL
-user_pref("privacy.cpd.cache", true);
-user_pref("privacy.cpd.cookies", true);
-user_pref("privacy.cpd.downloads", true);
-user_pref("privacy.cpd.formdata", true);
-user_pref("privacy.cpd.history", true);
-user_pref("privacy.cpd.offlineApps", true);
-user_pref("privacy.cpd.sessions", true);
-user_pref("privacy.cpd.siteSettings", true);
+user_pref("privacy.clearHistory.cache", true);
+user_pref("privacy.clearHistory.cookiesAndStorage", true);
+user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
+user_pref("privacy.clearHistory.siteSettings", true);
 user_pref("privacy.sanitize.timeSpan", 0);
 
 // Clean full history on exit
-user_pref("privacy.clearOnShutdown.cache", true);
-user_pref("privacy.clearOnShutdown.cookies", true);
-user_pref("privacy.clearOnShutdown.formdata", true);
-user_pref("privacy.clearOnShutdown.history", true);
-user_pref("privacy.clearOnShutdown.offlineApps", true);
-user_pref("privacy.clearOnShutdown.sessions", true);
-user_pref("privacy.clearOnShutdown.siteSettings", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
+user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
 user_pref("privacy.history.custom", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 
