@@ -72,6 +72,7 @@ user_pref("browser.newtabpage.activity-stream.discoverystream.endpoints", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.endpointSpocsClear", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.personalization.modelKeys", "");
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories.options", "");
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", "");
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.weatherfeed", false);
