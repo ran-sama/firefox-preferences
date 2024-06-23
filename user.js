@@ -169,9 +169,6 @@ user_pref("network.connectivity-service.enabled", false);
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.coverage.opt-out", true);
-user_pref("toolkit.telemetry.dap_enabled", false);
-user_pref("toolkit.telemetry.dap_helper", "");
-user_pref("toolkit.telemetry.dap_leader", "");
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
@@ -477,3 +474,6 @@ user_pref("browser.startup.windowsLaunchOnLogin.disableLaunchOnLoginPrompt", tru
 /* https://web.archive.org/web/20240606001047/https://github.com/mozilla/explainers/tree/main/ppa-experiment
 Eat sh*t, I'm not sending advertisers anonymized performance metrics how their crap loaded */
 user_pref("dom.private-attribution.submission.enabled", false);
+user_pref("toolkit.telemetry.dap_enabled", false);
+user_pref("toolkit.telemetry.dap_helper", "");
+user_pref("toolkit.telemetry.dap_leader", "");
