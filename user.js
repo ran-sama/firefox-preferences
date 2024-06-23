@@ -466,3 +466,7 @@ user_pref("security.ssl3.rsa_aes_256_sha", false);//no forward secrecy
 
 // Add search engines in about:preferences#search with aliases such as @myengine
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
+
+// No ugly hover thumbnails and verbose text on tab mouseover
+user_pref("browser.tabs.hoverPreview.enabled", false);
+user_pref("browser.tabs.hoverPreview.showThumbnails", false);
