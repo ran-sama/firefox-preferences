@@ -470,3 +470,4 @@ user_pref("browser.tabs.hoverPreview.showThumbnails", false);
 
 // Do not launch with windows
 user_pref("browser.startup.windowsLaunchOnLogin.enabled", false);
+user_pref("browser.startup.windowsLaunchOnLogin.disableLaunchOnLoginPrompt", true);
