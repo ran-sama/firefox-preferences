@@ -131,6 +131,12 @@ user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
 user_pref("privacy.clearHistory.siteSettings", true);
 user_pref("privacy.sanitize.timeSpan", 0);
 
+// Clean full history in settings menu
+user_pref("privacy.clearSiteData.cache", true);
+user_pref("privacy.clearSiteData.cookiesAndStorage", true);
+user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
+user_pref("privacy.clearSiteData.siteSettings", true);
+
 // Clean full history on exit
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
