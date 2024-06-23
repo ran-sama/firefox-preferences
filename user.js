@@ -473,3 +473,7 @@ user_pref("browser.tabs.hoverPreview.showThumbnails", false);
 // Do not launch with windows
 user_pref("browser.startup.windowsLaunchOnLogin.enabled", false);
 user_pref("browser.startup.windowsLaunchOnLogin.disableLaunchOnLoginPrompt", true);
+
+/* https://web.archive.org/web/20240606001047/https://github.com/mozilla/explainers/tree/main/ppa-experiment
+Eat sh*t, I'm not sending advertisers anonymized performance metrics how their crap loaded */
+user_pref("dom.private-attribution.submission.enabled", false);
