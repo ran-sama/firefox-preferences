@@ -467,3 +467,6 @@ user_pref("browser.urlbar.update2.engineAliasRefresh", true);
 // No ugly hover thumbnails and verbose text on tab mouseover
 user_pref("browser.tabs.hoverPreview.enabled", false);
 user_pref("browser.tabs.hoverPreview.showThumbnails", false);
+
+// Do not launch with windows
+user_pref("browser.startup.windowsLaunchOnLogin.enabled", false);
