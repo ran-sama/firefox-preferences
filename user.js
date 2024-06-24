@@ -466,7 +466,7 @@ user_pref("browser.startup.windowsLaunchOnLogin.disableLaunchOnLoginPrompt", tru
 https://web.archive.org/web/20240606001047/https://github.com/mozilla/explainers/tree/main/ppa-experiment
 https://web.archive.org/web/20240514152430/https://blog.mozilla.org/en/products/firefox/firefox-search-update/
 https://web.archive.org/web/20240617084245/https://blog.mozilla.org/en/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
-Eat sh*t, I'm not sending advertisers anonymized performance metrics how their crap loaded */
+Eat sh*t, I'm not sending advertisers anonymized performance metrics if their crap loaded */
 user_pref("browser.contentanalysis.default_allow", false);
 user_pref("browser.search.serpEventTelemetry.enabled", false);
 user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
