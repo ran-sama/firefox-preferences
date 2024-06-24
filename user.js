@@ -367,15 +367,6 @@ user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 user_pref("messaging-system.rsexperimentloader.enabled", false);
 user_pref("widget.windows.hide_cursor_when_typing", false);
 
-/* How to completely destroy user trust and sink yourself:
-https://blog.mozilla.org/en/products/firefox/firefox-search-update/
-Don't want to share any of our private data, you absolute gobshites */
-user_pref("browser.contentanalysis.default_allow", false);
-user_pref("browser.search.serpEventTelemetry.enabled", false);
-user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
-user_pref("toolkit.shopping.ohttpConfigURL", "");
-user_pref("toolkit.shopping.ohttpRelayURL", "");
-
 /* ATTENTION! Check each setting carefully:
 BELOW IS A SECTION WITH CHANGES THAT MIGHT BREAK STUFF */
 
@@ -471,9 +462,17 @@ user_pref("browser.tabs.hoverPreview.showThumbnails", false);
 user_pref("browser.startup.windowsLaunchOnLogin.enabled", false);
 user_pref("browser.startup.windowsLaunchOnLogin.disableLaunchOnLoginPrompt", true);
 
-/* https://web.archive.org/web/20240606001047/https://github.com/mozilla/explainers/tree/main/ppa-experiment
+/* How to completely destroy user trust and sink yourself:
+https://web.archive.org/web/20240606001047/https://github.com/mozilla/explainers/tree/main/ppa-experiment
+https://web.archive.org/web/20240514152430/https://blog.mozilla.org/en/products/firefox/firefox-search-update/
+https://web.archive.org/web/20240617084245/https://blog.mozilla.org/en/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
 Eat sh*t, I'm not sending advertisers anonymized performance metrics how their crap loaded */
+user_pref("browser.contentanalysis.default_allow", false);
+user_pref("browser.search.serpEventTelemetry.enabled", false);
+user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
 user_pref("dom.private-attribution.submission.enabled", false);
+user_pref("toolkit.shopping.ohttpConfigURL", "");
+user_pref("toolkit.shopping.ohttpRelayURL", "");
 user_pref("toolkit.telemetry.dap_enabled", false);
 user_pref("toolkit.telemetry.dap_helper", "");
 user_pref("toolkit.telemetry.dap_leader", "");
