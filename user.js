@@ -98,6 +98,7 @@ user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("browser.urlbar.trimURLs", false);
+user_pref("browser.urlbar.recentsearches.featureGate", false);
 
 // Spying and advertising
 user_pref("browser.urlbar.addons.featureGate", false);
