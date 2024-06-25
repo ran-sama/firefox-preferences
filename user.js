@@ -22,6 +22,7 @@
 //user_pref("privacy.trackingprotection.emailtracking.pbmode.enabled", false);
 //user_pref("privacy.trackingprotection.fingerprinting.enabled", false);
 //user_pref("privacy.trackingprotection.pbmode.enabled", false);
+//user_pref("browser.xul.error_pages.expert_bad_cert", true);
 
 // Nuke high-entropy fingerprinting IDs on every launch
 clearPref("app.installation.timestamp");//nanosecond precision timestamp for tracking
@@ -74,6 +75,7 @@ user_pref("browser.newtabpage.activity-stream.discoverystream.personalization.mo
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories.options", "");
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", "");
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.weatherfeed", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false);
@@ -246,8 +248,8 @@ user_pref("devtools.selfxss.count", 10);
 user_pref("dom.block_download_insecure", false);
 user_pref("full-screen-api.transition-duration.enter", "0 0");
 user_pref("full-screen-api.transition-duration.leave", "0 0");
-user_pref("full-screen-api.warning.delay", 0);
-user_pref("full-screen-api.warning.timeout", 0);
+user_pref("full-screen-api.warning.delay", -1);
+user_pref("full-screen-api.warning.timeout", -1);
 user_pref("general.smoothScroll", false);
 user_pref("general.warnOnAboutConfig", false);
 user_pref("security.dialog_enable_delay", 0);
@@ -357,7 +359,7 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.region.network.url", "");
 user_pref("browser.region.update.enabled", false);
 user_pref("browser.tabs.cardPreview.enabled", false);
-user_pref("browser.taskbar.lists.frequent.enabled", false);
+user_pref("browser.taskbar.lists.enabled", false);
 user_pref("browser.theme.colorway-closet", false);
 user_pref("browser.topsites.contile.endpoint", "");
 user_pref("devtools.debugger.remote-enabled", false);
@@ -372,7 +374,7 @@ user_pref("widget.windows.hide_cursor_when_typing", false);
 BELOW IS A SECTION WITH CHANGES THAT MIGHT BREAK STUFF */
 
 // Auto-reject access to Camera, Mic, VR, Geo, Notifications
-user_pref("permissions.default.xr", 2);
+user_pref("permissions.default.xr", 2);//virtual reality
 user_pref("permissions.default.geo", 2);
 user_pref("permissions.default.camera", 2);
 user_pref("permissions.default.microphone", 2);
@@ -469,6 +471,7 @@ https://web.archive.org/web/20240514152430/https://blog.mozilla.org/en/products/
 https://web.archive.org/web/20240617084245/https://blog.mozilla.org/en/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
 Eat sh*t, I'm not sending advertisers anonymized performance metrics if their crap loaded */
 user_pref("browser.contentanalysis.default_allow", false);
+user_pref("browser.contentanalysis.default_result", 0);
 user_pref("browser.contentanalysis.enabled", false);
 user_pref("browser.search.serpEventTelemetry.enabled", false);
 user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
