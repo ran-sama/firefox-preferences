@@ -220,7 +220,7 @@ Pretend that all browser windows are active by spoofing the visibility state eve
 Send videos from Firefox to the mpv player using a toolbar button, context menu or keyboard shortcut (Ctrl+Shift+Space).
 
 #### 25. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
-British Dictionary with 140 000+ words for basic literacy and washed online discourse.
+British Dictionary with 140,000+ words for basic literacy and washed online discourse.
 
 ## Structure of the profile directory
 
