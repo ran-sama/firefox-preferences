@@ -134,7 +134,7 @@ on Linux
 
 ## The Firefox 78 look is still possible with version 129
 
-![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/classic_look_102.png)
+![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/classic_look_129.png)
 
 Follow these instructions to the letter to achieve it:
 1) Leave "Proton" enabled in about:config, this way "Temporary Containers" can have the coloured underlines.
