@@ -219,7 +219,7 @@ Pretend that all browser windows are active by spoofing the visibility state eve
 #### 24. ff2mpv (for Windows) ([link](https://addons.mozilla.org/en-US/firefox/addon/ff2mpv-for-windows/)) you need to ([set this](https://kb.mozillazine.org/Register_protocol#Windows))
 Send videos from Firefox to the mpv player using a toolbar button, context menu or keyboard shortcut (Ctrl+Shift+Space).
 
-#### 24. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
+#### 25. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
 British Dictionary with 140 000+ words for basic literacy and washed online discourse.
 
 ## Structure of the profile directory
