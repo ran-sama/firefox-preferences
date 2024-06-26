@@ -3,7 +3,9 @@
 #editBookmarkPanelImage, #editBookmarkPanelFaviconContainer {
   display: none !important;
 }
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); {
+  /* reserved */
+}
 #urlbar .urlbar-history-dropmarker {
   display: none !important;
 }
