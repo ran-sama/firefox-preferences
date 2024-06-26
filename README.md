@@ -183,10 +183,10 @@ Prevent tracking by isolating tabs (and trackers inside them) from each other. S
 #### 12. uMatrix ([link](https://addons.mozilla.org/en-US/firefox/addon/umatrix/))
 Powerful matrix based content blocker. For advanced users due to initial effort after installation.
 
-#### 13. Downloads sidebar ([link](https://github.com/aesqe/firefox-downloads-sidebar/issues/24#issuecomment-1159643106))
+#### 13. Downloads sidebar ([signed backup](https://github.com/aesqe/firefox-downloads-sidebar/issues/24#issuecomment-1159643106))
 Fix for when Mozilla decided it was a good idea to kill the sidebar for downloads.
 
-#### 14. CanvasBlocker ([signed backup](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/)) or ([signed pre-releases](https://canvasblocker.kkapsner.de/versions/?C=M;O=D))
+#### 14. CanvasBlocker ([link](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/)) or ([signed pre-releases](https://canvasblocker.kkapsner.de/versions/?C=M;O=D))
 For experts only: Expect site breakage and maintaining whitelists. Randomizes Javascript APIs to prevent fingerprinting.
 
 #### 15. Cookie Quick Manager ([link](https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/))
