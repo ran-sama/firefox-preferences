@@ -153,71 +153,74 @@ The last uncompromised adblocker.
 #### 2. Smart HTTPS ([link](https://addons.mozilla.org/en-US/firefox/addon/smart-https-revived/))
 This extension automatically changes HTTP web addresses to the secure HTTPS, whenever possible.
 
-#### 3. I still don't care about cookies ([link](https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies/))
-Must have for EU users, can automatically click GDPR cookie warnings now on sites that won't load without consent.
-
-#### 4. Tampermonkey ([link](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) or ([signed beta](https://www.tampermonkey.net/?browser=firefox))
+#### 3. Tampermonkey ([link](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) or ([signed beta](https://www.tampermonkey.net/?browser=firefox))
 Userscript manager with the best interface and editor. Use Violentmonkey if you want a FLOSS alternative. The beta has better cookie creation features.
 
-#### 5. New Tab Override ([link](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/))
+#### 4. New Tab Override ([link](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/))
 Fix for when Mozilla decided to hijack the new tab page to push their activity stream and pocket reader.
 
-#### 6. Authenticator ([link](https://addons.mozilla.org/en-US/firefox/addon/auth-helper/))
+#### 5. Authenticator ([link](https://addons.mozilla.org/en-US/firefox/addon/auth-helper/))
 Generate login tokens based on HMAC (keyed-hash message authentication code). Has integrated QR reader to add accounts.
 
-#### 7. Reload All Tabs ([link](https://addons.mozilla.org/en-US/firefox/addon/reload-all-tabs/))
+#### 6. Reload All Tabs ([link](https://addons.mozilla.org/en-US/firefox/addon/reload-all-tabs/))
 Fix for when Mozilla decided to break workflow by doubling the amount of clicks to reload all tabs.
 
-#### 8. Clickbait Remover for Youtube ([link](https://addons.mozilla.org/en-US/firefox/addon/clickbait-remover-for-youtube/))
+#### 7. Clickbait Remover for Youtube ([link](https://addons.mozilla.org/en-US/firefox/addon/clickbait-remover-for-youtube/))
 Replaces thumbnails and modifies titles of videos on Youtube.
 
-#### 9. Google Images Restored backup ([link](https://addons.mozilla.org/en-US/firefox/addon/google-images-restored-backup/))
-Restores Google Images to how it appeared before August 6, 2019.
-
-#### 10. Offline QR Code Generator ([link](https://addons.mozilla.org/en-US/firefox/addon/offline-qr-code-generator/))
+#### 8. Offline QR Code Generator ([link](https://addons.mozilla.org/en-US/firefox/addon/offline-qr-code-generator/))
 This add-on allows you to quickly generate a QR code offline with the URL of the open tab or any (selected) other text.
 
-#### 11. Close Tabs Shortcuts ([link](https://addons.mozilla.org/en-US/firefox/addon/close-tabs-shortcuts/))
+#### 9. Close Tabs Shortcuts ([link](https://addons.mozilla.org/en-US/firefox/addon/close-tabs-shortcuts/))
 Adds keyboard shortcuts for closing all not active tabs, all to the left of the active one, all to the right.
 
-#### 12. Search by Image ([link](https://addons.mozilla.org/en-US/firefox/addon/search_by_image/))
+#### 10. Search by Image ([link](https://addons.mozilla.org/en-US/firefox/addon/search_by_image/))
 A powerful reverse image search tool, with support for various search engines.
 
-#### 13. Temporary Containers ([link](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/))
+#### 11. Temporary Containers ([link](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/))
 Prevent tracking by isolating tabs (and trackers inside them) from each other. Superior at clearing supercookies.
 
-#### 14. uMatrix ([link](https://addons.mozilla.org/en-US/firefox/addon/umatrix/))
+#### 12. uMatrix ([link](https://addons.mozilla.org/en-US/firefox/addon/umatrix/))
 Powerful matrix based content blocker. For advanced users due to initial effort after installation.
 
-#### 15. Downloads sidebar ([link](https://github.com/aesqe/firefox-downloads-sidebar/issues/24#issuecomment-1159643106))
+#### 13. Downloads sidebar ([link](https://github.com/aesqe/firefox-downloads-sidebar/issues/24#issuecomment-1159643106))
 Fix for when Mozilla decided it was a good idea to kill the sidebar for downloads.
 
-#### 16. CanvasBlocker ([link](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/))
+#### 14. CanvasBlocker ([signed backup](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/)) or ([signed pre-releases](https://canvasblocker.kkapsner.de/versions/?C=M;O=D))
 For experts only: Expect site breakage and maintaining whitelists. Randomizes Javascript APIs to prevent fingerprinting.
 
-#### 17. Cookie Quick Manager ([link](https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/))
+#### 15. Cookie Quick Manager ([link](https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/))
 Fix for when Mozilla decided it was a good idea to make the user not see the content of individual cookies.
 
-#### 18. Archive Page ([link](https://addons.mozilla.org/en-US/firefox/addon/archive-page/))
-Archive webpage with archive.today
+#### 16. LocalStorage Editor ([link](https://addons.mozilla.org/en-US/firefox/addon/localstorage-editor/))
+Add, edit, copy, remove, export and import local and session storage data.
 
-#### 19. View Image Context Menu Item ([link](https://addons.mozilla.org/en-US/firefox/addon/view-image-context-menu-item/))
-Adds View Image to the image context menu.
+#### 17. Web Archives ([link](https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/))
+View archived and cached versions of web pages on 10+ search engines, such as the Wayback Machine, Archive․is, Google, Bing and Yandex.
 
-#### 20. Stylus ([link](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
+#### 18. Stylus ([link](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
 Redesign websites with Stylus and personalized CSS stylesheets.
 
-#### 21. SponsorBlock ([link](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/))
+#### 19. SponsorBlock ([link](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/))
 Easily skip YouTube video sponsors.
 
-#### 22. Don't "Accept" image/webp ([link](https://addons.mozilla.org/en-US/firefox/addon/dont-accept-webp/))
+#### 20. Don't "Accept" image/webp ([link](https://addons.mozilla.org/en-US/firefox/addon/dont-accept-webp/))
 This extension removes image/webp from the list of formats Firefox tells sites that it accepts. 
 
-#### 23. IndicateTLS ([link](https://addons.mozilla.org/en-US/firefox/addon/indicatetls/))
+#### 21. IndicateTLS ([link](https://addons.mozilla.org/en-US/firefox/addon/indicatetls/))
 Displays negotiated SSL/TLS protocol version and additional security information in the address bar.
 
-#### 24. Save webP as PNG or JPEG ([link](https://addons.mozilla.org/en-US/firefox/addon/save-webp-as-png-or-jpeg/))
+#### 22. Save webP as PNG or JPEG ([link](https://addons.mozilla.org/en-US/firefox/addon/save-webp-as-png-or-jpeg/))
 Convert any image (WebP, AVIF, etc.) to PNG or JPEG (with choice of quality) for downloading.
+
+#### 23. Always active Window (Always Visible) ([link](https://addons.mozilla.org/en-US/firefox/addon/always-visible/))
+Pretend that all browser windows are active by spoofing the visibility state event.
+
+#### 24. ff2mpv (for Windows) ([link](https://addons.mozilla.org/en-US/firefox/addon/ff2mpv-for-windows/)) you need to ([set this](https://kb.mozillazine.org/Register_protocol#Windows))
+Send videos from Firefox to the mpv player using a toolbar button, context menu or keyboard shortcut (Ctrl+Shift+Space).
+
+#### 24. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
+British Dictionary with 140 000+ words for basic literacy and washed online discourse.
 
 ## Structure of the profile directory
 
