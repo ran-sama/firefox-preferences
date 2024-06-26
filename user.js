@@ -481,3 +481,10 @@ user_pref("toolkit.shopping.ohttpRelayURL", "");
 user_pref("toolkit.telemetry.dap_enabled", false);
 user_pref("toolkit.telemetry.dap_helper", "");
 user_pref("toolkit.telemetry.dap_leader", "");
+
+/* https://web.archive.org/web/20240223051719/https://blog.mozilla.ai/introducing-mozilla-ai-investing-in-trustworthy-ai/
+Generative AI tech bro crap, expect this section to grow even more with Firefox 130++ */
+user_pref("browser.ml.chat.enabled", false);
+user_pref("browser.ml.chat.provider", "");
+user_pref("browser.ml.chat.sidebar", false);
+user_pref("pdfjs.enableML", false);
