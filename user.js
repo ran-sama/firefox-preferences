@@ -108,6 +108,7 @@ user_pref("browser.urlbar.clipboard.featureGate", false);
 user_pref("browser.urlbar.mdn.featureGate", false);
 user_pref("browser.urlbar.merino.endpointURL", "");
 user_pref("browser.urlbar.pocket.featureGate", false);
+user_pref("browser.urlbar.quicksuggest.contextualOptIn", false);//cringe
 user_pref("browser.urlbar.quicksuggest.dataCollection.enabled", false);
 user_pref("browser.urlbar.quicksuggest.enabled", false);
 user_pref("browser.urlbar.suggest.pocket", false);
