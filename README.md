@@ -119,6 +119,10 @@ user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyD
 
 Many cloud-based cyber security providers (you know which one) try to lock you out if you disable too many APIs in your browser (bot-like behaviour). Automatically denying access to an API is safer than disabling it, whilst still not sending any sensitive data about your client.
 
+![alt text[]()](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/blocked_not_disabled.png)
+
+This behaviour looks way more "human" to a tracking script, rather than fully turning your API off. There is no off switch in settings, but there is a "deny" button in the pop-up you would normally see. We automate by automatically denying any request and never have to bother to interact with the always hidden pop-up. Whilst the result (privacy protected) is the same, our browser looks like a real browser (all features supported).
+
 ## Installation and directories
 on Windows
 ```
