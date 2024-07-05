@@ -121,9 +121,8 @@ Many cloud-based cyber security providers (you know which one) try to lock you o
 
 ![alt text[]()](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/blocked_not_disabled.png)
 
-Allow me to illustrate why this behaviour looks way more "human" to a tracking script: If a website checks our browser it will reply with "geolocation supported", however the readout is automatically blocked and the browser only returns "denied by user" which would be eaxtly the case if we really closed the pop-up ourselves with "do not allow". Our privacy is protected without actually having to click anything, thanks to a configured default reply (auto-deny). Unlike curl or wget we are feature complete.
-
-We create convenvience by automatically denying any request and never have to bother to interact with the always hidden pop-up. Whilst the result (privacy protected) is the same, our browser looks like a real browser (all features supported).
+Allow me to illustrate why this behaviour looks way more "human" to a tracking script:
+If a website checks our browser it will reply with "geolocation supported", however the readout is automatically blocked and the browser only returns "denied by user" which would be eaxtly the case if we really closed the pop-up ourselves with "do not allow".
 
 ## Installation and directories
 on Windows
