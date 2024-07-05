@@ -121,7 +121,7 @@ Many cloud-based cyber security providers (you know which one) try to lock you o
 
 ![alt text[]()](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/blocked_not_disabled.png)
 
-This behaviour looks way more "human" to a tracking script, rather than fully turning your API off. There is no off switch in settings, but there is a "deny" button in the pop-up you would normally see. We automate by automatically denying any request and never have to bother to interact with the always hidden pop-up. Whilst the result (privacy protected) is the same, our browser looks like a real browser (all features supported).
+This behaviour looks way more "human" to a tracking script, rather than fully turning your API off. There is no off switch in the regular settings GUI normal users see, but there is a "deny" button in the pop-up you would normally see. We automate by automatically denying any request and never have to bother to interact with the always hidden pop-up. Whilst the result (privacy protected) is the same, our browser looks like a real browser (all features supported).
 
 ## Installation and directories
 on Windows
