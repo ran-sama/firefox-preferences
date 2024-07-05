@@ -123,7 +123,7 @@ Many cloud-based cyber security providers (you know which one) try to lock you o
 
 Allow me to illustrate why this behaviour looks way more "human" to a tracking script:  
 
-If a website checks our browser it will reply with "geolocation supported", however the readout is automatically blocked and the browser only returns "denied by user" which would be exactly the case if we really closed the pop-up ourselves with "do not allow".
+If a website checks our browser it will reply with "geolocation supported", however the readout is automatically blocked and the browser only returns "denied by user". This would be exactly the case if we really closed the pop-up ourselves with "do not allow".
 
 ## Installation and directories
 on Windows
