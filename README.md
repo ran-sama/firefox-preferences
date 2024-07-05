@@ -226,11 +226,14 @@ British Dictionary with 140,000+ words for basic literacy and washed online disc
 
 If you ever want to clean your profile, all of your important data can be reduced down to these files:
 
-![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/profile_structure_1.png)
+![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/profile_structure_1_new.png)
 
 Directories:
 * chrome - stores Cascading Style Sheets that can alter the look of the UI and/or websites
 * extensions - stores XPI archives (ZIP compressed) that contains your addons
+* extension-store-menus - NEW hipster binary swamp to store your extension's menus!
+* extension-store-permissions - NEW hipster binary swamp to store your extension's permissions!
+* gmp-gmpopenh264 - (optional) proprietary AVC codec for video calls and WebRTC
 * gmp-widevine - (optional) proprietary Digital Restrictions Management binaries for Netflix
 * storage - important sqlite structure that contains all settings and data of your addons
 
@@ -238,14 +241,13 @@ Files:
 * cert9.db - client certificates and CA certificates
 * key4.db - contains data required to decrypt your stored passwords
 * prefs.js - browser settings
-* extension-preferences.json - permissions of extensions
 * extensions.json - extension metadata
 * extension-settings.json - controls activation state of addons
+* handlers.json - preferences how to open or save specific file formats
 * logins.json - stores all your saved passwords
 * xulstore.json - controls placements of UI elements like buttons of addons
 * addonStartup.json.lz4 - compressed path info for extensions
 * search.json.mozlz4 - search providers compressed with Mozilla's near proprietary implementation of LZ4
-* cert_override.txt - (optional) surpresses certificate errors for sites you manually added as trustworthy
 * favicons.sqlite - bookmark icons
 * places.sqlite - bookmark database
 * storage-sync-v2.sqlite - terrible addon devs store data here
