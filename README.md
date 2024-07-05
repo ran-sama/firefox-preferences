@@ -234,7 +234,7 @@ Directories:
 * extension-store-menus - NEW hipster binary swamp to store your extension's menus!
 * extension-store-permissions - NEW hipster binary swamp to store your extension's permissions!
 * gmp-gmpopenh264 - (optional) proprietary AVC codec for video calls and WebRTC
-* gmp-widevine - (optional) proprietary Digital Restrictions Management binaries for Netflix
+* gmp-widevine - (optional) proprietary Digital Restrictions Management binaries for streaming services
 * storage - important sqlite structure that contains all settings and data of your addons
 
 Files:
