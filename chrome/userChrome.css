@@ -1,5 +1,5 @@
-@import "./css/tabs/tabs_below_navigation_toolbar_default_tabs.css";
-@import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css";
+@import "./css/tabs/tabs_below_navigation_toolbar.css";
+@import "tabs_custom_tweaks.css";
 #editBookmarkPanelImage, #editBookmarkPanelFaviconContainer {
   display: none !important;
 }
