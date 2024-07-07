@@ -365,6 +365,7 @@ user_pref("browser.theme.colorway-closet", false);
 user_pref("browser.topsites.contile.endpoint", "");
 user_pref("devtools.debugger.remote-enabled", false);
 user_pref("dom.image-lazy-loading.enabled", false);
+user_pref("dom.iframe_lazy_loading.enabled", false);
 user_pref("media.suspend-bkgnd-video.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
