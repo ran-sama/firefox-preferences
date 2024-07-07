@@ -222,7 +222,7 @@ Convert any image (WebP, AVIF, etc.) to PNG or JPEG (with choice of quality) for
 #### 23. Always active Window (Always Visible) ([link](https://addons.mozilla.org/en-US/firefox/addon/always-visible/))
 Pretend that all browser windows are active by spoofing the visibility state event.
 
-#### 24. Disable Page Visibility API (Android compatible) ([link](https://addons.mozilla.org/en-US/firefox/addon/disable_page_visibility_api/)
+#### 24. Disable Page Visibility API (Android compatible) ([link](https://addons.mozilla.org/en-US/firefox/addon/disable_page_visibility_api/))
 Firefox add-on to disable the Page Visibility API. This prevents e.g. video conferencing systems from tracking whether you are currently in another window.
 
 #### 25. ff2mpv (for Windows) ([link](https://addons.mozilla.org/en-US/firefox/addon/ff2mpv-for-windows/)) you need to ([set this](https://kb.mozillazine.org/Register_protocol#Windows))
