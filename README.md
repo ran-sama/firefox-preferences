@@ -222,10 +222,13 @@ Convert any image (WebP, AVIF, etc.) to PNG or JPEG (with choice of quality) for
 #### 23. Always active Window (Always Visible) ([link](https://addons.mozilla.org/en-US/firefox/addon/always-visible/))
 Pretend that all browser windows are active by spoofing the visibility state event.
 
-#### 24. ff2mpv (for Windows) ([link](https://addons.mozilla.org/en-US/firefox/addon/ff2mpv-for-windows/)) you need to ([set this](https://kb.mozillazine.org/Register_protocol#Windows))
+#### 24. Disable Page Visibility API (Android compatible) ([link](https://addons.mozilla.org/en-US/firefox/addon/disable_page_visibility_api/)
+Firefox add-on to disable the Page Visibility API. This prevents e.g. video conferencing systems from tracking whether you are currently in another window.
+
+#### 25. ff2mpv (for Windows) ([link](https://addons.mozilla.org/en-US/firefox/addon/ff2mpv-for-windows/)) you need to ([set this](https://kb.mozillazine.org/Register_protocol#Windows))
 Send videos from Firefox to the mpv player using a toolbar button, context menu or keyboard shortcut (Ctrl+Shift+Space).
 
-#### 25. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
+#### 26. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
 British Dictionary with 140,000+ words for basic literacy and washed online discourse.
 
 ## Structure of the profile directory
