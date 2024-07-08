@@ -486,7 +486,13 @@ user_pref("toolkit.telemetry.dap_leader", "");
 
 /* https://web.archive.org/web/20240223051719/https://blog.mozilla.ai/introducing-mozilla-ai-investing-in-trustworthy-ai/
 Generative AI tech bro crap, expect this section to grow even more with Firefox 130++ */
+user_pref("browser.ml.enable", false);
 user_pref("browser.ml.chat.enabled", false);
 user_pref("browser.ml.chat.provider", "");
 user_pref("browser.ml.chat.sidebar", false);
+user_pref("browser.ml.chat.prompt.prefix", "");
+user_pref("browser.ml.chat.prompts.0", "");
+user_pref("browser.ml.chat.prompts.1", "");
+user_pref("browser.ml.chat.prompts.2", "");
+user_pref("browser.ml.modelHubRootUrl", "");
 user_pref("pdfjs.enableML", false);
