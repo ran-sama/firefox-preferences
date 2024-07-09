@@ -6,6 +6,7 @@
 //user_pref("browser.startup.homepage", "https://www.google.com/?hl=de&nfpr=1&safe=off&ucbcb=1");
 //user_pref("browser.tabs.warnOnClose", true);
 //user_pref("browser.toolbars.bookmarks.visibility", "always");
+//user_pref("browser.translations.enable", false);
 //user_pref("browser.uidensity", 1);
 //user_pref("browser.urlbar.autoFill", false);
 //user_pref("media.hardwaremediakeys.enabled", false);
