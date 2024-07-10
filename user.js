@@ -169,6 +169,7 @@ user_pref("default-browser-agent.enabled", false);
 user_pref("dom.push.serverURL", "");
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
+user_pref("network.connectivity-service.DNS_HTTPS.domain", "");
 
 // Disable Firefox telemetry implants from spying on your browser usage
 user_pref("toolkit.telemetry.archive.enabled", false);
