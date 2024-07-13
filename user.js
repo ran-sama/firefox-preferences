@@ -24,6 +24,7 @@
 //user_pref("privacy.trackingprotection.fingerprinting.enabled", false);
 //user_pref("privacy.trackingprotection.pbmode.enabled", false);
 //user_pref("browser.xul.error_pages.expert_bad_cert", true);
+//user_pref("browser.spin_cursor_while_busy", false);
 
 // Nuke high-entropy fingerprinting IDs on every launch
 clearPref("app.installation.timestamp");//nanosecond precision timestamp for tracking
@@ -88,6 +89,7 @@ user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.weather.locationSearchEnabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.merino-provider.endpoint", "");
 
 // Repair the URL-bar to a more sane behaviour
 user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
@@ -167,6 +169,7 @@ user_pref("browser.send_pings", false);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("default-browser-agent.enabled", false);
 user_pref("dom.push.serverURL", "");
+user_pref("dom.security.unexpected_system_load_telemetry_enabled", false);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
 user_pref("network.connectivity-service.DNS_HTTPS.domain", "");
@@ -183,6 +186,11 @@ user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.dap_task1_enabled", false);
+user_pref("toolkit.telemetry.dap_visit_counting_enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.backgroundtask.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabledFirstSession", false);
+user_pref("toolkit.telemetry.user_characteristics_ping.opt-out", true);
 
 // No crash or error reporting
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);
@@ -222,6 +230,7 @@ user_pref("network.prefetch-next", false);
 4 = not used
 5 = disabled due to the user's selection */
 user_pref("network.trr.mode", 5);
+user_pref("network.trr.confirmation_telemetry_enabled", false);
 
 // Disable the forced welcome page, studies and experiments
 user_pref("app.normandy.api_url", "");
@@ -346,6 +355,7 @@ user_pref("browser.tabs.tabmanager.enabled", false);
 
 // Firefox Sync and Relay
 user_pref("identity.fxaccounts.enabled", false);
+user_pref("identity.fxaccounts.telemetry.clientAssociationPing.enabled", false);
 user_pref("signon.firefoxRelay.feature", "disabled");
 
 // Disable promotional content
