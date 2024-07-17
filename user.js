@@ -249,6 +249,7 @@ user_pref("extensions.pocket.api", "");
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.pocket.site", "");
 user_pref("extensions.quarantinedDomains.enabled", false);
+user_pref("extensions.recommendations.hideNotice", true);
 user_pref("extensions.webextensions.restrictedDomains", "");
 
 // Mitigate settings treating the user like a child
