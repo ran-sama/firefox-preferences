@@ -146,6 +146,7 @@ user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
 
 // Clean full history on exit
+user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs2", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
