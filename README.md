@@ -228,7 +228,10 @@ Firefox add-on to disable the Page Visibility API. This prevents e.g. video conf
 #### 25. ff2mpv (for Windows) ([link](https://addons.mozilla.org/en-US/firefox/addon/ff2mpv-for-windows/)) you need to ([set this](https://kb.mozillazine.org/Register_protocol#Windows))
 Send videos from Firefox to the mpv player using a toolbar button, context menu or keyboard shortcut (Ctrl+Shift+Space).
 
-#### 26. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
+#### 26. Don't track me Google ([link](https://addons.mozilla.org/en-US/firefox/addon/dont-track-me-google1/))
+Removes the annoying link-conversion at Google Search / maps / ...
+
+#### 27. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
 British Dictionary with 140,000+ words for basic literacy and washed online discourse.
 
 ## Structure of the profile directory
