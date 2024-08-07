@@ -510,3 +510,9 @@ user_pref("browser.ml.chat.prompts.1", "");
 user_pref("browser.ml.chat.prompts.2", "");
 user_pref("browser.ml.modelHubRootUrl", "");
 user_pref("pdfjs.enableML", false);
+
+// Block Google as new geolocation provider
+user_pref("geo.provider.network.url", "");
+
+// Unlock the block button in about:third-party if you want to disable hostile DLLs loaded into Firefox by other software
+user_pref("browser.contentblocking.customBlockList.preferences.ui.enabled", true);
