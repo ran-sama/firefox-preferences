@@ -27,6 +27,9 @@
 //user_pref("browser.spin_cursor_while_busy", false);
 //user_pref("network.security.ports.banned.override", "0-65535");
 //user_pref("browser.taskbar.lists.frequent.enabled", false);
+//user_pref("security.certerrors.permanentOverride", false);
+//user_pref("browser.tabs.unloadOnLowMemory", false);
+//user_pref("network.cookie.CHIPS.enabled", false);
 
 // Nuke high-entropy fingerprinting IDs on every launch
 clearPref("app.installation.timestamp");//nanosecond precision timestamp for tracking
@@ -68,6 +71,10 @@ user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
 
 // Remove Newtab advertiser botnet that tries to monetize Firefox
+user_pref("browser.newtabpage.activity-stream.discoverystream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.personalization.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.spocTopsitesPlacement.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.spocs.personalized", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
@@ -313,6 +320,7 @@ user_pref("dom.push.connection.enabled", false);
 user_pref("dom.push.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
+user_pref("dom.webnotifications.privateBrowsing.enabled", false);
 
 // Disable Firefox View
 user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
@@ -491,6 +499,8 @@ Eat sh*t, I'm not sending advertisers anonymized performance metrics if their cr
 user_pref("browser.contentanalysis.default_allow", false);
 user_pref("browser.contentanalysis.default_result", 0);
 user_pref("browser.contentanalysis.enabled", false);
+user_pref("browser.search.widget.inNavBar", false);
+user_pref("browser.search.serpMetricsRecordedCounter", 0);
 user_pref("browser.search.serpEventTelemetry.enabled", false);
 user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
 user_pref("dom.private-attribution.submission.enabled", false);
@@ -505,16 +515,29 @@ Generative AI tech bro crap, expect this section to grow even more with Firefox 
 user_pref("browser.ml.enable", false);
 user_pref("browser.ml.chat.enabled", false);
 user_pref("browser.ml.chat.provider", "");
+user_pref("browser.ml.chat.shortcuts", false);
 user_pref("browser.ml.chat.sidebar", false);
 user_pref("browser.ml.chat.prompt.prefix", "");
 user_pref("browser.ml.chat.prompts.0", "");
 user_pref("browser.ml.chat.prompts.1", "");
 user_pref("browser.ml.chat.prompts.2", "");
+user_pref("browser.ml.chat.prompts.3", "");
+user_pref("browser.ml.chat.prompts.4", "");
 user_pref("browser.ml.modelHubRootUrl", "");
 user_pref("pdfjs.enableML", false);
+user_pref("pdfjs.enableAltText", false);
+user_pref("pdfjs.enableAltTextModelDownload", false);
+user_pref("pdfjs.enableGuessAltText", false);
+user_pref("pdfjs.enableNewAltTextWhenAddingImage", false);
 
 // Block Google as new geolocation provider
 user_pref("geo.provider.network.url", "");
 
 // Unlock the block button in about:third-party if you want to disable hostile DLLs loaded into Firefox by other software
 user_pref("browser.contentblocking.customBlockList.preferences.ui.enabled", true);
+
+/* More trash extensions:
+Fakespot by Mozilla, which uses AI to detect fake reviews and scams, we've seen it all when it comes to e-commerce */
+user_pref("browser.urlbar.fakespot.featureGate", false);
+user_pref("browser.urlbar.suggest.fakespot", false);
+user_pref("browser.urlbar.quicksuggest.sponsoredIndex", -1);
