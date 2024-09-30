@@ -18,3 +18,6 @@
 .tabbrowser-tab[usercontextid] .tab-content > * {
   margin-bottom: -2px !important
 }
+#tabbrowser-tabs:not([overflow="true"]) ~ #alltabs-button {
+    display: none !important;
+}
