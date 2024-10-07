@@ -38,6 +38,7 @@ clearPref("browser.contextual-services.contextId");
 clearPref("browser.newtabpage.activity-stream.impressionId");
 clearPref("dom.push.userAgentID");
 clearPref("toolkit.telemetry.cachedClientID");
+clearPref("browser.search.totalSearches");
 
 // Remove Google implants in Firefox that rat out your browsing under the pretense of security
 user_pref("browser.safebrowsing.downloads.enabled", false);
@@ -541,3 +542,21 @@ Fakespot by Mozilla, which uses AI to detect fake reviews and scams, we've seen 
 user_pref("browser.urlbar.fakespot.featureGate", false);
 user_pref("browser.urlbar.suggest.fakespot", false);
 user_pref("browser.urlbar.quicksuggest.sponsoredIndex", -1);
+
+// Firefox 131 changes
+user_pref("browser.newtabpage.activity-stream.discoverystream.merino-provider.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.topicLabels.enabled", false);
+user_pref("network.cookie.chips.partitionLimitEnabled", false);
+user_pref("network.send_OnDataFinished.cssLoader", false);
+user_pref("browser.search.totalSearches", 0);
+user_pref("browser.translations.mostRecentTargetLanguages", "");
+user_pref("network.http.network_error_logging.enabled", false);
+
+// Gaslight the users with more pretend privacy preserving spying
+user_pref("toolkit.telemetry.dap.helper.hpke", "");
+user_pref("toolkit.telemetry.dap.helper.url", "");
+user_pref("toolkit.telemetry.dap_helper_owner", "");
+user_pref("toolkit.telemetry.dap.leader.hpke", "");
+user_pref("toolkit.telemetry.dap.leader.url", "");
+user_pref("toolkit.telemetry.dap_leader_owner", "");
+
