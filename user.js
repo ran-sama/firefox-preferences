@@ -29,7 +29,6 @@
 //user_pref("browser.taskbar.lists.frequent.enabled", false);
 //user_pref("security.certerrors.permanentOverride", false);
 //user_pref("browser.tabs.unloadOnLowMemory", false);
-//user_pref("network.cookie.CHIPS.enabled", false);
 
 // Nuke high-entropy fingerprinting IDs on every launch
 clearPref("app.installation.timestamp");//nanosecond precision timestamp for tracking
@@ -38,6 +37,7 @@ clearPref("browser.contextual-services.contextId");
 clearPref("browser.newtabpage.activity-stream.impressionId");
 clearPref("dom.push.userAgentID");
 clearPref("toolkit.telemetry.cachedClientID");
+clearPref("toolkit.telemetry.cachedProfileGroupID");
 clearPref("browser.search.totalSearches");
 
 // Remove Google implants in Firefox that rat out your browsing under the pretense of security
@@ -546,6 +546,7 @@ user_pref("browser.urlbar.quicksuggest.sponsoredIndex", -1);
 // Firefox 131 changes
 user_pref("browser.newtabpage.activity-stream.discoverystream.merino-provider.enabled", false);
 user_pref("browser.newtabpage.activity-stream.discoverystream.topicLabels.enabled", false);
+user_pref("network.cookie.CHIPS.enabled", false);
 user_pref("network.cookie.chips.partitionLimitEnabled", false);
 user_pref("network.send_OnDataFinished.cssLoader", false);
 user_pref("browser.search.totalSearches", 0);
@@ -559,4 +560,12 @@ user_pref("toolkit.telemetry.dap_helper_owner", "");
 user_pref("toolkit.telemetry.dap.leader.hpke", "");
 user_pref("toolkit.telemetry.dap.leader.url", "");
 user_pref("toolkit.telemetry.dap_leader_owner", "");
+user_pref("toolkit.telemetry.dap_visit_counting_experiment_list", "[]");
+user_pref("network.trr.use_ohttp", false);
+user_pref("network.trr.ohttp.uri", "");
+user_pref("network.trr.ohttp.relay_uri", "");
+user_pref("network.trr.ohttp.config_uri", "");
 
+// Still reviewing
+user_pref("media.devices.enumerate.legacy.enabled", false);
+user_pref("permissions.media.query.enabled", false);
