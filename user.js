@@ -569,3 +569,20 @@ user_pref("network.trr.ohttp.config_uri", "");
 // Still reviewing
 user_pref("media.devices.enumerate.legacy.enabled", false);
 user_pref("permissions.media.query.enabled", false);
+//user_pref("sidebar.animation.duration-ms", 0);
+//user_pref("sidebar.animation.enabled", false);
+
+// Disable sponsored content
+user_pref("browser.newtabpage.activity-stream.unifiedAds.endpoint", "");
+user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs", "");
+user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs.counts", 0);
+user_pref("browser.newtabpage.activity-stream.discoverystream.placements.tiles", "");
+user_pref("browser.newtabpage.activity-stream.unifiedAds.spocs.enabled", false);
+user_pref("browser.newtabpage.activity-stream.unifiedAds.tiles.enabled", false);
+user_pref("browser.shopping.experience2023.integratedSidebar", false);
+
+// AI chat spyware sidebar
+user_pref("sidebar.visibility", "hide-sidebar");
+user_pref("sidebar.main.tools", "");
+user_pref("sidebar.revamp", false);
+user_pref("sidebar.verticalTabs", false);
