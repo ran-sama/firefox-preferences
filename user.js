@@ -575,7 +575,6 @@ user_pref("permissions.media.query.enabled", false);
 // Disable sponsored content
 user_pref("browser.newtabpage.activity-stream.unifiedAds.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs", "");
-user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs.counts", 0);
 user_pref("browser.newtabpage.activity-stream.discoverystream.placements.tiles", "");
 user_pref("browser.newtabpage.activity-stream.unifiedAds.spocs.enabled", false);
 user_pref("browser.newtabpage.activity-stream.unifiedAds.tiles.enabled", false);
@@ -586,3 +585,6 @@ user_pref("sidebar.visibility", "hide-sidebar");
 user_pref("sidebar.main.tools", "");
 user_pref("sidebar.revamp", false);
 user_pref("sidebar.verticalTabs", false);
+
+// Do NOT change, bugged setting
+//user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs.counts", 0);
