@@ -21,3 +21,8 @@
 #tabbrowser-tabs:not([overflow="true"]) ~ #alltabs-button {
     display: none !important;
 }
+/* Firefox 132 only fix
+#toolbar-menubar {
+  height: 37px !important; 
+}
+*/
