@@ -586,5 +586,8 @@ user_pref("sidebar.main.tools", "");
 user_pref("sidebar.revamp", false);
 user_pref("sidebar.verticalTabs", false);
 
+// Disable URL bar search icon
+user_pref("browser.urlbar.scotchBonnet.enableOverride", false);
+
 // Do NOT change, bugged setting
 //user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs.counts", 0);
