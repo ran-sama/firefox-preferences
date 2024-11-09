@@ -1,5 +1,5 @@
 # firefox-preferences
-This repository is simply selecting better default parameters for [built-in anti-fingerprinting](https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc) features and re-enabling old UI and UX features that advanced users like. It also disconnects from services such as "safebrowsing", which are unecessary if you are using just Firefox and uBlock Origin, which already provide great online safety.
+This repository is simply selecting better default parameters for [built-in anti-fingerprinting](https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc) features and re-enabling old UI and UX features that advanced users like. It also disconnects from services such as "safebrowsing", which are unnecessary if you are using just Firefox and uBlock Origin, which already provide great online safety.
 
 ## How it works
 
@@ -138,9 +138,9 @@ on Linux
 1) Close Firefox and move the user.js in your profile directory where the pref.js resides.
 2) On the next start Firefox parses the settings of the user.js and writes them into your prefs.js 
 
-## The Firefox 78 look is still possible with version 129
+## The Firefox 78 look is still possible with version 132+
 
-![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/classic_look_129_test.png)
+![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/firefox_132_test.png)
 
 Follow these instructions to the letter to achieve it:
 1) Leave "Proton" enabled in about:config, this way "Temporary Containers" can have the coloured underlines.
@@ -260,7 +260,7 @@ No setting in here will be deprecated. If it still works, it works. If it doesn'
 https://searchfox.org/mozilla-central/source/netwerk/base/nsIOService.cpp#87
 https://searchfox.org/mozilla-central/source/netwerk/base/nsIOService.cpp#1527
 ```  
-It would appear that these settings are split and later concatenated/compared via ```strcmp``` to make searching the source code harder. This of course is a needless extra step in the code, but it has a nice plausible denaibility.
+It would appear that these settings are split and later concatenated/compared via ```strcmp``` to make searching the source code harder. This of course is a needless extra step in the code, but it has a nice plausible deniability.
 ```
 https://searchfox.org/mozilla-esr60/source/dom/ipc/ContentPrefs.cpp#283
 ```
