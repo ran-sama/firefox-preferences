@@ -26,3 +26,10 @@
   height: 37px !important; 
 }
 */
+/* Firefox 134 only fix
+#tabbrowser-tabs,
+#tabbrowser-tabs > #tabbrowser-arrowscrollbox,
+.tabbrowser-tabs .tabbrowser-tab {
+  min-height: 22px !important;
+}
+*/
