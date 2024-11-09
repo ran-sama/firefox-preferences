@@ -589,5 +589,9 @@ user_pref("sidebar.verticalTabs", false);
 // Disable URL bar search icon
 user_pref("browser.urlbar.scotchBonnet.enableOverride", false);
 
+// Crisp clean GDI classic windows fonts
+user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_for_families", "Arial,Consolas,Courier New,Microsoft Sans Serif,Segoe UI,Tahoma,Trebuchet MS,Verdana");
+user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_max_size", 15);
+
 // Do NOT change, bugged setting
 //user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs.counts", 0);
