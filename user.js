@@ -593,5 +593,10 @@ user_pref("browser.urlbar.scotchBonnet.enableOverride", false);
 user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_for_families", "Arial,Consolas,Courier New,Microsoft Sans Serif,Segoe UI,Tahoma,Trebuchet MS,Verdana");
 user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_max_size", 15);
 
-// Do NOT change, bugged setting
-//user_pref("browser.newtabpage.activity-stream.discoverystream.placements.spocs.counts", 0);
+// Firefox 133 changes
+user_pref("browser.ml.chat.shortcuts.custom", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.contextualContent.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.contextualContent.fakespot.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.spocs.startupCache.enabled", false);
+user_pref("browser.urlbar.quicksuggest.mlEnabled", false);
+user_pref("browser.urlbar.yelp.mlEnabled", false);
