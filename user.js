@@ -29,6 +29,8 @@
 //user_pref("browser.taskbar.lists.frequent.enabled", false);
 //user_pref("security.certerrors.permanentOverride", false);
 //user_pref("browser.tabs.unloadOnLowMemory", false);
+//user_pref("security.OCSP.enabled", 2);
+//user_pref("dom.serviceWorkers.enabled", false);
 
 // Nuke high-entropy fingerprinting IDs on every launch
 clearPref("app.installation.timestamp");//nanosecond precision timestamp for tracking
@@ -569,8 +571,8 @@ user_pref("network.trr.ohttp.config_uri", "");
 // Still reviewing
 user_pref("media.devices.enumerate.legacy.enabled", false);
 user_pref("permissions.media.query.enabled", false);
-//user_pref("sidebar.animation.duration-ms", 0);
-//user_pref("sidebar.animation.enabled", false);
+user_pref("sidebar.animation.duration-ms", 0);
+user_pref("sidebar.animation.enabled", false);
 
 // Disable sponsored content
 user_pref("browser.newtabpage.activity-stream.unifiedAds.endpoint", "");
@@ -600,3 +602,19 @@ user_pref("browser.newtabpage.activity-stream.discoverystream.contextualContent.
 user_pref("browser.newtabpage.activity-stream.discoverystream.spocs.startupCache.enabled", false);
 user_pref("browser.urlbar.quicksuggest.mlEnabled", false);
 user_pref("browser.urlbar.yelp.mlEnabled", false);
+
+// Spying, general ML, anti-features
+user_pref("extensions.ml.enabled", false);
+user_pref("browser.contentanalysis.enabled", false);
+user_pref("browser.contentanalysis.interception_point.clipboard.enabled", false);
+user_pref("browser.contentanalysis.interception_point.drag_and_drop.enabled", false);
+user_pref("browser.contentanalysis.interception_point.file_upload.enabled", false);
+user_pref("browser.contentanalysis.interception_point.print.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.cards.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.cards.thumbsUpDown.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.enabled", false);
+
+/* Allowed Advertising and tracking called Smartblock
+https://web.archive.org/web/20241222152319/https://support.mozilla.org/en-US/kb/smartblock-enhanced-tracking-protection
+which seems not very smart to use at all */
+user_pref("extensions.webcompat.smartblockEmbeds.enabled", false);
