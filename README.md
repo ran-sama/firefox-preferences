@@ -9,7 +9,7 @@ user_pref("privacy.fingerprintingProtection", true);
 user_pref("privacy.fingerprintingProtection.pbmode", true);
 user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+CSSDeviceSize,+JSDateTimeUTC,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLRenderInfo,+JSLocale,+NavigatorHWConcurrency");
 ```
-You can either disable all with ```-AllTargets``` and only enable select features with ```+Example1,+Example2,+...``` or you can enable all with ```+AllTargets``` and only disable select features with ```-Example1,-Example2,-...``` . The current selection is ```CSSDeviceSize``` to obfuscate unique screen resolutions, ```JSDateTimeUTC``` to spoof the timezone, ```FontVisibilityBaseSystem``` to hide non-stock OS fonts, ```MediaDevices``` to show a mic and camera as peripherals regardless if they are there or not (pretend to be a laptop), ```SpeechSynthesis``` which can reveal non-english users by foreign TTS voices, ```WebGLRenderInfo``` to hide your graphics vendor, ```JSLocale``` to pretend being en-US, ```NavigatorHWConcurrency``` to hide your most likely excessive unique thread count of your enthousiast CPU.  
+You can either disable all with ```-AllTargets``` and only enable select features with ```+Example1,+Example2,+...``` or you can enable all with ```+AllTargets``` and only disable select features with ```-Example1,-Example2,-...``` . The current selection is ```CSSDeviceSize``` to obfuscate unique screen resolutions, ```JSDateTimeUTC``` to spoof the timezone, ```FontVisibilityBaseSystem``` to hide non-stock OS fonts, ```MediaDevices``` to show a mic and camera as peripherals regardless if they are there or not (pretend to be a laptop), ```SpeechSynthesis``` which can reveal non-english users by foreign TTS voices, ```WebGLRenderInfo``` to hide your graphics vendor, ```JSLocale``` to pretend being en-US, ```NavigatorHWConcurrency``` to hide your most likely excessive unique thread count of your enthusiast CPU.  
 
 A comprehensive list of all current options is in the collapsed code-box below which you can expand with the triangle:  
 <details>
@@ -171,8 +171,8 @@ Generate login tokens based on HMAC (keyed-hash message authentication code). Ha
 #### 6. Reload All Tabs ([link](https://addons.mozilla.org/en-US/firefox/addon/reload-all-tabs/))
 Fix for when Mozilla decided to break workflow by doubling the amount of clicks to reload all tabs.
 
-#### 7. Clickbait Remover for Youtube ([link](https://addons.mozilla.org/en-US/firefox/addon/clickbait-remover-for-youtube/))
-Replaces thumbnails and modifies titles of videos on Youtube.
+#### 7. Clickbait Remover for YouTube ([link](https://addons.mozilla.org/en-US/firefox/addon/clickbait-remover-for-youtube/))
+Replaces thumbnails and modifies titles of videos on YouTube.
 
 #### 8. Offline QR Code Generator ([link](https://addons.mozilla.org/en-US/firefox/addon/offline-qr-code-generator/))
 This add-on allows you to quickly generate a QR code offline with the URL of the open tab or any (selected) other text.
@@ -295,7 +295,7 @@ Directories:
 * extension-store-permissions - NEW hipster binary swamp to store your extension's permissions!
 * gmp-gmpopenh264 - (optional) proprietary AVC codec for video calls and WebRTC
 * gmp-widevine - (optional) proprietary Digital Restrictions Management binaries for streaming services
-* storage - important sqlite structure that contains all settings and data of your addons
+* storage - important SQLite structure that contains all settings and data of your addons
 
 Files:
 * cert9.db - client certificates and CA certificates
