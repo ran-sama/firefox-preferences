@@ -240,19 +240,18 @@ British Dictionary with 140,000+ words for basic literacy and washed online disc
 https://searchfox.org/mozilla-central/source/netwerk/base/nsIOService.cpp#115
 user_pref("network.security.ports.banned.override", "0-65535");
 https://searchfox.org/mozilla-central/search?q=network.security.ports.banned.override&path=&case=false&regexp=false
+https://searchfox.org/mozilla-esr60/source/dom/ipc/ContentPrefs.cpp#283
 ```
-It would appear that certain settings are split and later concatenated/compared via ```strcmp``` to make searching the source code harder. This of course is a needless extra step in the code, but it has a nice plausible deniability.
+For some peculiar reason certain settings these days are split and later concatenated/compared via ```strcmp``` making a search in source code hard. In consideration of them being searchable in past (ESR 60) this has a certain ring to it.
 
 #### Update:
 ```
-https://searchfox.org/mozilla-central/source/netwerk/base/nsIOService.cpp#87
-https://searchfox.org/mozilla-central/source/netwerk/base/nsIOService.cpp#1527
+
 ```  
 It would appear that these settings are split and later concatenated/compared via ```strcmp``` to make searching the source code harder. This of course is a needless extra step in the code, but it has a nice plausible deniability.
 ```
 https://searchfox.org/mozilla-esr60/source/dom/ipc/ContentPrefs.cpp#283
 ```
-In the past (ESR 60) these settings were not kept from the users.
 
 ## Enterprise Policies
 ```
