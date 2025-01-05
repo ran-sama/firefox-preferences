@@ -234,26 +234,14 @@ Removes the annoying link-conversion at Google Search / maps / ...
 #### 27. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/de/firefox/addon/british-english-dictionary-2/))
 British Dictionary with 140,000+ words for basic literacy and washed online discourse.
 
-## Hidden, deprecated or migrated settings
+## Hidden settings
 
-Mozilla is making a lot of effort to hide certain settings from their users, for example there are forbidden ports:  
 ```
 https://searchfox.org/mozilla-central/source/netwerk/base/nsIOService.cpp#115
-```
-There is no such thing as a bad port, fools! If you set up a staging server and want to use alternative ports, that's our business. Telling the user what port you can connect to is security by obscurity. Every port that serves HTTP and HTTPS can be processed by your browser. If the protocol is not supported it just gracefully errors. But this leads to nothing.  
-```
 user_pref("network.security.ports.banned.override", "0-65535");
-```
-This setting should not exist anymore, right? Well it's not just hidden, it was also stealth-purged from the codebase:  
-```
 https://searchfox.org/mozilla-central/search?q=network.security.ports.banned.override&path=&case=false&regexp=false
 ```
-```
-No results for current query.
-```
-So it doesn't work anymore, correct? It's not in the source code. Well it does work, that means it is not just hidden from ```about:config``` but also from src. And this is simply nefarious: Keeping the users artificially unknowledgeable on purpose and deny them critical need-to-know information. You are not allowed anymore to look under the hood.  
-
-No setting in here will be deprecated. If it still works, it works. If it doesn't, then the extra line of settings won't do any harm if it is never called nor understood. In the time of DDR5 and NVME this is just scraping off µs for nothing. Mozilla is not trustworthy with their ML and trusted advertising. One day, they surely will simply remove a setting with no fallback, until then any setting is never obsolete and it will remain to document the freedom they have taken from their users.
+It would appear that certain settings are split and later concatenated/compared via ```strcmp``` to make searching the source code harder. This of course is a needless extra step in the code, but it has a nice plausible deniability.
 
 #### Update:
 ```
