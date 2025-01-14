@@ -709,8 +709,8 @@ user_pref("network.connectivity-service.enabled", false);
   PERSONAL SECTION
 
   Personal settings that I don't want to force on anyone
-*/
-/*
+
+
 user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("browser.bookmarks.defaultLocation", "menu________");
 user_pref("browser.cache.disk.parent_directory", "C:\\\\Users\\\\CENSORED\\\\AppData\\\\Local\\\\Temp\\\\firefox_cache");
