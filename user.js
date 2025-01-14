@@ -628,6 +628,7 @@ user_pref("nimbus.validation.enabled", false);
 user_pref("nimbus.telemetry.targetingContextEnabled", false);
 
 // Uncategorized BS, please check yourself
+user_pref("browser.search.totalSearches", 0);
 user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.preferences.moreFromMozilla", false);
@@ -727,8 +728,7 @@ user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("dom.security.https_only_mode", false);
 user_pref("dom.serviceWorkers.enabled", false);
 user_pref("media.eme.enabled", false);
-user_pref("media.gmp-gmpopenh264.enabled", false);
-user_pref("media.gmp-widevinecdm.enabled", false);
+user_pref("media.gmp-gmpopenh264.visible", false);
 user_pref("media.hardwaremediakeys.enabled", false);
 user_pref("network.dns.disableIPv6", true);
 user_pref("network.http.http3.enable_kyber", true);
