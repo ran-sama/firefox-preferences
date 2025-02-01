@@ -293,7 +293,7 @@ Files:
 ![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/profile_structure_2.png)
 
 * userChrome.css - changes the style of the browser's UI
-* userContent.css - changes styles of websites, like userthemes
+* userContent.css - changes styles of websites akin to userstyles
 
 ## License
 Licensed under the WTFPL license.
