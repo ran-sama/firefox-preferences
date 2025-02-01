@@ -36,6 +36,8 @@ user_pref("privacy.clearSiteData.formData", true);
 user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
 user_pref("privacy.sanitize.timeSpan", 0);
+user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs2", true);
+//user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs3", true);//Firefox 136
 
 // Clean full history on exit
 user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", true);
@@ -45,8 +47,9 @@ user_pref("privacy.clearOnShutdown_v2.formData", true);
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
 user_pref("privacy.history.custom", true);
-user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs2", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs2", true);
+//user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs3", true);//Firefox 136
 
 /*
   DISCONNECT SECTION
@@ -101,6 +104,10 @@ user_pref("browser.newtabpage.activity-stream.unifiedAds.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.unifiedAds.spocs.enabled", false);
 user_pref("browser.newtabpage.activity-stream.unifiedAds.tiles.enabled", false);
 user_pref("browser.newtabpage.activity-stream.weather.locationSearchEnabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.personalization.enabled", false);
+user_pref("browser.newtabpage.activity-stream.newtabAdSize.billboard", false);
+user_pref("browser.newtabpage.activity-stream.newtabAdSize.leaderboard", false);
 
 // Remove Google implants that inspect your browsing under the pretense of security
 user_pref("browser.safebrowsing.downloads.enabled", false);
@@ -305,6 +312,7 @@ user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("browser.urlbar.suggest.trending", false);
 user_pref("browser.urlbar.suggest.weather", false);
 user_pref("browser.urlbar.suggest.yelp", false);
+user_pref("browser.urlbar.showSearchSuggestionsFirst", false);
 
 // Disable promotional content
 user_pref("browser.promo.focus.enabled", false);
@@ -642,14 +650,6 @@ user_pref("devtools.debugger.remote-enabled", false);
 user_pref("widget.windows.hide_cursor_when_typing", false);
 user_pref("network.http.network_error_logging.enabled", false);
 
-// Still under review
-/*
-user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs3", true);
-user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs3", true);
-user_pref("network.cookie.CHIPS.enabled", false);
-user_pref("network.cookie.chips.partitionLimitEnabled", false);
-*/
-
 /*
   BREAKAGE SECTION
   BREAKAGE SECTION
@@ -714,7 +714,7 @@ user_pref("network.connectivity-service.enabled", false);
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("browser.bookmarks.defaultLocation", "menu________");
-user_pref("browser.cache.disk.parent_directory", "C:\\\\Users\\\\CENSORED\\\\AppData\\\\Local\\\\Temp\\\\firefox_cache");
+user_pref("browser.cache.disk.parent_directory", "C:\\\\Users\\\\REDACTED\\\\AppData\\\\Local\\\\Temp\\\\firefox_cache");
 user_pref("browser.download.dir", "D:\\sorting");
 user_pref("browser.spin_cursor_while_busy", false);
 user_pref("browser.startup.homepage", "https://www.google.com/?hl=de&nfpr=1&safe=off&ucbcb=1");
@@ -728,6 +728,7 @@ user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("dom.security.https_only_mode", false);
 user_pref("dom.serviceWorkers.enabled", false);
 user_pref("media.eme.enabled", false);
+user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-gmpopenh264.visible", false);
 user_pref("media.hardwaremediakeys.enabled", false);
 user_pref("network.dns.disableIPv6", true);
@@ -748,4 +749,14 @@ user_pref("security.tls.enable_kyber", true);
 user_pref("sidebar.position_start", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("ui.systemUsesDarkTheme", 0);
+user_pref("reader.color_scheme", "custom");
+user_pref("reader.content_width", 5);
+user_pref("reader.custom_colors.background", "#c0c0c0");
+user_pref("reader.custom_colors.unvisited-links", "#0000a0");
+user_pref("reader.custom_colors.visited-links", "#800080");
+user_pref("reader.font_size", 4);
+user_pref("reader.line_height", 3);
 */
+// Still under review
+//user_pref("network.cookie.CHIPS.enabled", false);
+//user_pref("network.cookie.chips.partitionLimitEnabled", false);
