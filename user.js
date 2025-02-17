@@ -666,6 +666,8 @@ user_pref("security.ssl.require_safe_negotiation", true);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 
 // Disable legacy cipher suites
+// Turned a few settings off that break a filehoster
+/*
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha", false);//weak
 user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", false);//weak
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha", false);//weak
@@ -674,6 +676,7 @@ user_pref("security.ssl3.rsa_aes_128_gcm_sha256", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_256_gcm_sha384", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_128_sha", false);//no forward secrecy
 user_pref("security.ssl3.rsa_aes_256_sha", false);//no forward secrecy
+*/
 
 // Auto-reject access to Camera, Mic, VR, Geo, Notifications
 user_pref("permissions.default.xr", 2);//virtual reality
