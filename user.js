@@ -37,19 +37,46 @@ user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
 user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs2", true);
-//user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs3", true);//Firefox 136
+user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs3", true);
 
 // Clean full history on exit
+user_pref("privacy.clearOnShutdown.cache", true);
+user_pref("privacy.clearOnShutdown.cookies", true);
+user_pref("privacy.clearOnShutdown.downloads", true);
+user_pref("privacy.clearOnShutdown.formdata", true);
+user_pref("privacy.clearOnShutdown.history", true);
+user_pref("privacy.clearOnShutdown.openWindows", true);
+user_pref("privacy.clearOnShutdown.sessions", true);
+user_pref("privacy.clearOnShutdown.siteSettings", true);
+user_pref("privacy.clearOnShutdown.offlineApps", true);
 user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
 user_pref("privacy.clearOnShutdown_v2.formData", true);
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
+user_pref("privacy.clearSiteDataHeader.cache.enabled", true);
 user_pref("privacy.history.custom", true);
+
+// Sanitize settings
+user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs2", true);
+user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs3", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs2", true);
-//user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs3", true);//Firefox 136
+user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs3", true);
+
+// Old clear history dialog
+user_pref("privacy.sanitize.useOldClearHistoryDialog", true);
+user_pref("privacy.cpd.cache", true);
+user_pref("privacy.cpd.cookies", true);
+user_pref("privacy.cpd.downloads", true);
+user_pref("privacy.cpd.formdata", true);
+user_pref("privacy.cpd.history", true);
+user_pref("privacy.cpd.offlineApps", true);
+user_pref("privacy.cpd.openWindows", false);
+user_pref("privacy.cpd.passwords", false);
+user_pref("privacy.cpd.sessions", true);
+user_pref("privacy.cpd.siteSettings", true);
 
 /*
   DISCONNECT SECTION
@@ -649,6 +676,23 @@ user_pref("browser.topsites.contile.endpoint", "");
 user_pref("devtools.debugger.remote-enabled", false);
 user_pref("widget.windows.hide_cursor_when_typing", false);
 user_pref("network.http.network_error_logging.enabled", false);
+
+// Firefox 136 readiness update
+user_pref("browser.newtabpage.activity-stream.feeds.adsfeed", false);
+user_pref("browser.newtabpage.activity-stream.newtabLogo.aprilfools", false);
+user_pref("browser.newtabpage.activity-stream.telemetry.ut.events", false);
+user_pref("browser.newtabpage.activity-stream.unifiedAds.adsFeed.spocs.enabled", false);
+user_pref("datareporting.usage.uploadEnabled", false);
+
+
+/* A Firefox Suggestion for desktop from adMarketplace
+https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/feature/fxsuggest/README.md
+Never change, Mozilla.. */
+user_pref("browser.urlbar.quicksuggest.ampMatchingStrategy", 0);
+user_pref("browser.urlbar.quicksuggest.ampTopPickCharThreshold", 0);
+
+// Legacy authentication method, they may want to hide or purge one day
+user_pref("network.http.basic_http_auth.enabled", true);
 
 /*
   BREAKAGE SECTION
