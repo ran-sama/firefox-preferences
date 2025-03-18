@@ -35,9 +35,6 @@ user_pref("privacy.clearSiteData.cookiesAndStorage", true);
 user_pref("privacy.clearSiteData.formData", true);
 user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
-user_pref("privacy.sanitize.timeSpan", 0);
-user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs2", true);
-user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs3", true);
 
 // Clean full history on exit
 user_pref("privacy.clearOnShutdown.cache", true);
@@ -59,6 +56,7 @@ user_pref("privacy.clearSiteDataHeader.cache.enabled", true);
 user_pref("privacy.history.custom", true);
 
 // Sanitize settings
+user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs2", true);
 user_pref("privacy.sanitize.cpd.hasMigratedToNewPrefs3", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
@@ -709,11 +707,9 @@ user_pref("security.tls.version.enable-deprecated", false);
 user_pref("security.ssl.require_safe_negotiation", true);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 
-// Disable legacy cipher suites
+// Disable legacy cipher suites, 2 already disabled by default in FF137, thus removed
 // Turned a few settings off that break a filehoster
 /*
-user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha", false);//weak
-user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", false);//weak
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha", false);//weak
 user_pref("security.ssl3.ecdhe_rsa_aes_256_sha", false);//weak
 user_pref("security.ssl3.rsa_aes_128_gcm_sha256", false);//no forward secrecy
@@ -774,6 +770,7 @@ user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("dom.security.https_only_mode", false);
 user_pref("dom.serviceWorkers.enabled", false);
+user_pref("dom.media.webcodecs.h265.enabled", true);
 user_pref("media.eme.enabled", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-gmpopenh264.visible", false);
@@ -797,13 +794,24 @@ user_pref("sidebar.position_start", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("ui.systemUsesDarkTheme", 0);
 user_pref("reader.color_scheme", "custom");
-user_pref("reader.content_width", 5);
 user_pref("reader.custom_colors.background", "#c0c0c0");
-user_pref("reader.custom_colors.unvisited-links", "#0000a0");
 user_pref("reader.custom_colors.visited-links", "#800080");
-user_pref("reader.font_size", 4);
-user_pref("reader.line_height", 3);
+user_pref("reader.custom_colors.unvisited-links", "#0000a0");
 */
 // Still under review
 //user_pref("network.cookie.CHIPS.enabled", false);
 //user_pref("network.cookie.chips.partitionLimitEnabled", false);
+//user_pref("sidebar.animation.expand-on-hover.duration-ms", 0);
+//user_pref("sidebar.expandOnHover", false);
+//user_pref("sidebar.new-sidebar.has-used", false);
+//user_pref("sidebar.old-sidebar.has-used", false);
+
+// Firefox 137 changes
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.interestPicker.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.personalization.inferred.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.topicSelection.enabled", false);
+user_pref("browser.shopping.experience2023.autoClose.userEnabled", false);
+user_pref("browser.urlbar.quicksuggest.contextualOptIn.sayHello", false);
+user_pref("browser.urlbar.quicksuggest.shouldShowOnboardingDialog", false);
+user_pref("dom.security.unexpected_system_load_telemetry_enabled", false);
+user_pref("toolkit.shopping.experience2023.defr", false);
