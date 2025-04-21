@@ -760,7 +760,7 @@ user_pref("browser.bookmarks.defaultLocation", "menu________");
 user_pref("browser.cache.disk.parent_directory", "C:\\\\Users\\\\REDACTED\\\\AppData\\\\Local\\\\Temp\\\\firefox_cache");
 user_pref("browser.download.dir", "D:\\sorting");
 user_pref("browser.spin_cursor_while_busy", false);
-user_pref("browser.startup.homepage", "https://www.google.com/?hl=de&nfpr=1&safe=off&ucbcb=1");
+user_pref("browser.startup.homepage", "https://www.google.com/?hl=en&nfpr=1&safe=off&ucbcb=1");
 user_pref("browser.tabs.warnOnClose", true);
 user_pref("browser.taskbar.lists.frequent.enabled", false);
 user_pref("browser.toolbars.bookmarks.visibility", "always");
@@ -793,10 +793,12 @@ user_pref("security.tls.enable_kyber", true);
 user_pref("sidebar.position_start", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("ui.systemUsesDarkTheme", 0);
-user_pref("reader.color_scheme", "custom");
-user_pref("reader.custom_colors.background", "#c0c0c0");
-user_pref("reader.custom_colors.visited-links", "#800080");
-user_pref("reader.custom_colors.unvisited-links", "#0000a0");
+//user_pref("reader.color_scheme", "custom");
+//user_pref("reader.custom_colors.background", "#c0c0c0");
+//user_pref("reader.custom_colors.visited-links", "#800080");
+//user_pref("reader.custom_colors.unvisited-links", "#0000a0");
+user_pref("security.insecure_connection_text.enabled", false);
+user_pref("security.insecure_connection_text.pbmode.enabled", false);
 */
 // Still under review
 //user_pref("network.cookie.CHIPS.enabled", false);
@@ -815,3 +817,12 @@ user_pref("browser.urlbar.quicksuggest.contextualOptIn.sayHello", false);
 user_pref("browser.urlbar.quicksuggest.shouldShowOnboardingDialog", false);
 user_pref("dom.security.unexpected_system_load_telemetry_enabled", false);
 user_pref("toolkit.shopping.experience2023.defr", false);
+
+// Firefox 138 changes
+user_pref("browser.contentanalysis.max_connections", 0);
+user_pref("browser.ml.linkPreview.enabled", false);
+user_pref("browser.ml.checkForMemory", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.personalization.inferred.user.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.newtabmessaging", false);
+user_pref("sidebar.expandOnHover", false);
+user_pref("sidebar.revamp.defaultLauncherVisible", false);
