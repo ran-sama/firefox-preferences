@@ -826,3 +826,7 @@ user_pref("browser.newtabpage.activity-stream.discoverystream.sections.personali
 user_pref("browser.newtabpage.activity-stream.feeds.newtabmessaging", false);
 user_pref("sidebar.expandOnHover", false);
 user_pref("sidebar.revamp.defaultLauncherVisible", false);
+
+// Firefox 139 changes
+user_pref("browser.newtabpage.activity-stream.telemetry.privatePing.enabled", false);
+user_pref("toolkit.aboutLogging.uploadProfileToCloud", false);
