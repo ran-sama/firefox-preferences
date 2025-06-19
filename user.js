@@ -7,6 +7,7 @@ clearPref("browser.search.totalSearches");
 clearPref("dom.push.userAgentID");
 clearPref("toolkit.telemetry.cachedClientID");
 clearPref("toolkit.telemetry.cachedProfileGroupID");
+clearPref("nimbus.profileId");
 
 /*
   CLEANING SECTION
@@ -794,11 +795,13 @@ user_pref("sidebar.position_start", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("ui.systemUsesDarkTheme", 0);
 //user_pref("reader.color_scheme", "custom");
-//user_pref("reader.custom_colors.background", "#c0c0c0");
+//user_pref("reader.custom_colors.background", "#e6dcd2");
 //user_pref("reader.custom_colors.visited-links", "#800080");
 //user_pref("reader.custom_colors.unvisited-links", "#0000a0");
 user_pref("security.insecure_connection_text.enabled", false);
 user_pref("security.insecure_connection_text.pbmode.enabled", false);
+user_pref("browser.tabs.groups.enabled", false);
+user_pref("browser.tabs.unloadTabInContextMenu", false);
 */
 // Still under review
 //user_pref("network.cookie.CHIPS.enabled", false);
@@ -830,3 +833,20 @@ user_pref("sidebar.revamp.defaultLauncherVisible", false);
 // Firefox 139 changes
 user_pref("browser.newtabpage.activity-stream.telemetry.privatePing.enabled", false);
 user_pref("toolkit.aboutLogging.uploadProfileToCloud", false);
+
+// Firefox 140 changes
+user_pref("browser.ml.linkPreview.optin", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.merino-provider.ohttp.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.ohttp.configURL", "");
+user_pref("browser.newtabpage.activity-stream.discoverystream.ohttp.relayURL", "");
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.contextualAds.enabled", false);
+user_pref("browser.newtabpage.activity-stream.telemetry.privatePing.inferredInterests.enabled", false);
+user_pref("browser.newtabpage.activity-stream.telemetry.privatePing.redactNewtabPing.enabled", false);
+user_pref("browser.newtabpage.activity-stream.unifiedAds.ohttp.enabled", false);
+user_pref("browser.urlbar.yelp.serviceResultDistinction", false);
+user_pref("security.csp.reporting.enabled", false);
+
+/* Nimbus implant:
+Feature API in Desktop Firefox to run experiments, set values remotely, and manage user preferences */
+user_pref("nimbus.profilesdatastoreservice.enabled", false);
+user_pref("nimbus.profileId", "");
