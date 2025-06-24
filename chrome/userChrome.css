@@ -94,3 +94,7 @@ tooltip{
  #nav-bar #tracking-protection-icon-container {
     display: none !important;
 }
+/* Fix Firefox 140 sidebar flyout regression */
+#bookmarksPanel, #history-panel {
+    background-color: #f2f2f2 !important;
+}
