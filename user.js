@@ -802,6 +802,7 @@ user_pref("security.insecure_connection_text.enabled", false);
 user_pref("security.insecure_connection_text.pbmode.enabled", false);
 user_pref("browser.tabs.groups.enabled", false);
 user_pref("browser.tabs.unloadTabInContextMenu", false);
+user_pref("devtools.chrome.enabled", true);
 */
 // Still under review
 //user_pref("network.cookie.CHIPS.enabled", false);
@@ -845,6 +846,7 @@ user_pref("browser.newtabpage.activity-stream.telemetry.privatePing.redactNewtab
 user_pref("browser.newtabpage.activity-stream.unifiedAds.ohttp.enabled", false);
 user_pref("browser.urlbar.yelp.serviceResultDistinction", false);
 user_pref("security.csp.reporting.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.inferredpersonalizationfeed", false);
 
 /* Nimbus implant:
 Feature API in Desktop Firefox to run experiments, set values remotely, and manage user preferences */
