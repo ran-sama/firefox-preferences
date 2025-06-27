@@ -41,7 +41,7 @@ toolbarbutton:not(#bookmarks-menu-button):not(#alltabs-button):not(.bookmark-ite
 menupopup > menuitem , menupopup > menu {
   appearance: none !important;
   background-color: #f2f2f2 !important;
-  color: black !important;   
+  color: black !important;
 }
 menupopup > menuitem, menupopup > menu {
   padding-block: 2px !important;
@@ -59,7 +59,7 @@ menupopup > menuitem, menupopup > menu {
   background-color: #634d80 !important;
 }
 #tabbrowser-tabs .tab-context-line {
-    display: none;
+  display: none;
 }
  /* Changes below are only for v102 */
 #main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
@@ -77,24 +77,25 @@ tooltip{
 }
 /* Bring back green lock icon */
 #identity-box[pageproxystate="valid"].verifiedDomain #identity-icon {
-    fill: #12bc00 !important;
-    fill-opacity: 1 !important;
-    transition: 100ms linear !important;
+  fill: #12bc00 !important;
+  fill-opacity: 1 !important;
+  transition: 100ms linear !important;
 }
 /* Yellow override */
 #identity-box[pageproxystate="valid"].certUserOverridden #identity-icon {
-    fill: #ffe900 !important;
-    fill-opacity: 1 !important;
-    transition: 100ms linear !important;
+  fill: #ffe900 !important;
+  fill-opacity: 1 !important;
+  transition: 100ms linear !important;
 }
 /* Hide shield icon in URL bar */
  #nav-bar #tracking-protection-icon-box {
-    visibility: collapse !important;
+  visibility: collapse !important;
 }
  #nav-bar #tracking-protection-icon-container {
-    display: none !important;
+  display: none !important;
 }
-/* Fix Firefox 140 sidebar flyout regression */
+/* Fix Firefox 140.0.1 sidebar flyout regression */
 #bookmarksPanel, #history-panel {
-    background-color: #f2f2f2 !important;
+  background-color: #f2f2f2 !important;
+  color: black !important;   
 }
