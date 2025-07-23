@@ -760,6 +760,8 @@ user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("browser.bookmarks.defaultLocation", "menu________");
 user_pref("browser.cache.disk.parent_directory", "C:\\\\Users\\\\REDACTED\\\\AppData\\\\Local\\\\Temp\\\\firefox_cache");
 user_pref("browser.download.dir", "D:\\sorting");
+user_pref("browser.screenshots.dir", "D:\\sorting");
+user_pref("browser.screenshots.folderList", 2);
 user_pref("browser.spin_cursor_while_busy", false);
 user_pref("browser.startup.homepage", "https://www.google.com/?hl=en&nfpr=1&safe=off&ucbcb=1");
 user_pref("browser.tabs.warnOnClose", true);
@@ -771,6 +773,7 @@ user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("dom.security.https_only_mode", false);
 user_pref("dom.serviceWorkers.enabled", false);
+user_pref("dom.webgpu.service-workers.enabled", false);
 user_pref("dom.media.webcodecs.h265.enabled", true);
 user_pref("media.eme.enabled", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);
@@ -794,23 +797,28 @@ user_pref("security.tls.enable_kyber", true);
 user_pref("sidebar.position_start", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("ui.systemUsesDarkTheme", 0);
+//user_pref("reader.character_spacing", 1);
 //user_pref("reader.color_scheme", "custom");
+//user_pref("reader.content_width", 5);
 //user_pref("reader.custom_colors.background", "#e6dcd2");
-//user_pref("reader.custom_colors.visited-links", "#800080");
-//user_pref("reader.custom_colors.unvisited-links", "#0000a0");
+//user_pref("reader.line_height", 2);
+//user_pref("reader.word_spacing", 1);
 user_pref("security.insecure_connection_text.enabled", false);
 user_pref("security.insecure_connection_text.pbmode.enabled", false);
 user_pref("browser.tabs.groups.enabled", false);
 user_pref("browser.tabs.unloadTabInContextMenu", false);
 user_pref("devtools.chrome.enabled", true);
+user_pref("browser.urlbar.unitConversion.enabled", false);
+user_pref("security.tls.enable_certificate_compression_abridged", true);
 */
 // Still under review
-//user_pref("network.cookie.CHIPS.enabled", false);
-//user_pref("network.cookie.chips.partitionLimitEnabled", false);
 //user_pref("sidebar.animation.expand-on-hover.duration-ms", 0);
 //user_pref("sidebar.expandOnHover", false);
 //user_pref("sidebar.new-sidebar.has-used", false);
 //user_pref("sidebar.old-sidebar.has-used", false);
+//user_pref("network.lna.enabled", false);
+//user_pref("network.lna.blocking", true);
+//user_pref("network.lna.block_trackers", true);
 
 // Firefox 137 changes
 user_pref("browser.newtabpage.activity-stream.discoverystream.sections.interestPicker.enabled", false);
@@ -852,3 +860,19 @@ user_pref("browser.newtabpage.activity-stream.feeds.inferredpersonalizationfeed"
 Feature API in Desktop Firefox to run experiments, set values remotely, and manage user preferences */
 user_pref("nimbus.profilesdatastoreservice.enabled", false);
 user_pref("nimbus.profileId", "");
+
+// Firefox 141 changes
+user_pref("browser.contentanalysis.interception_point.download.enabled", false);
+user_pref("browser.ml.chat.menu", false);
+user_pref("browser.ml.chat.page", false);
+user_pref("browser.ml.chat.page.footerBadge", false);
+user_pref("browser.ml.chat.page.menuBadge", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.shortcuts.personalization.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.smartshortcutsfeed", false);
+user_pref("browser.newtabpage.activity-stream.feeds.trendingsearchfeed", false);
+user_pref("browser.newtabpage.activity-stream.system.trendingSearch.enabled", false);
+user_pref("browser.newtabpage.activity-stream.trendingSearch.enabled", false);
+user_pref("browser.urlbar.suggest.amp", false);
+user_pref("browser.urlbar.amp.featureGate", false);
+user_pref("nimbus.profilesdatastoreservice.read.enabled", false);
+user_pref("sidebar.notification.badge.aichat", false);
