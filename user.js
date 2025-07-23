@@ -26,6 +26,7 @@ user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearHistory.cache", true);
 user_pref("privacy.clearHistory.cookiesAndStorage", true);
 user_pref("privacy.clearHistory.formData", true);
+user_pref("privacy.clearHistory.formdata", true);//because moz needed the setting twice with lowercase
 user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
 user_pref("privacy.clearHistory.siteSettings", true);
 
@@ -34,8 +35,10 @@ user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearSiteData.cache", true);
 user_pref("privacy.clearSiteData.cookiesAndStorage", true);
 user_pref("privacy.clearSiteData.formData", true);
+user_pref("privacy.clearSiteData.formdata", true);//because moz needed the setting twice with lowercase
 user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
+user_pref("privacy.clearSiteDataHeader.cache.bfcache.enabled", true);//navigation back forward cache
 
 // Clean full history on exit
 user_pref("privacy.clearOnShutdown.cache", true);
@@ -51,6 +54,7 @@ user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
 user_pref("privacy.clearOnShutdown_v2.formData", true);
+user_pref("privacy.clearOnShutdown_v2.formdata", true);//because moz needed the setting twice with lowercase
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
 user_pref("privacy.clearSiteDataHeader.cache.enabled", true);
@@ -876,3 +880,9 @@ user_pref("browser.urlbar.suggest.amp", false);
 user_pref("browser.urlbar.amp.featureGate", false);
 user_pref("nimbus.profilesdatastoreservice.read.enabled", false);
 user_pref("sidebar.notification.badge.aichat", false);
+
+// "Smart" means AI tech bro features, which are not very smart to use
+user_pref("browser.tabs.groups.smart.optin", false);
+user_pref("browser.tabs.groups.smart.enabled", false);
+user_pref("browser.tabs.groups.smart.userEnabled", false);
+user_pref("browser.newtabpage.activity-stream.images.smart", false);
