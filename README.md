@@ -138,9 +138,9 @@ on Linux
 1) Close Firefox and move the user.js in your profile directory where the pref.js resides.
 2) On the next start Firefox parses the settings of the user.js and writes them into your prefs.js 
 
-## The Firefox 78 look is still possible with version 135+
+## The Firefox 78 look is still possible with version 141+
 
-![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/firefox_132_test.png)
+![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/images/firefox_141_test.png)
 
 Follow these instructions to the letter to achieve it:
 1) Leave "Proton" enabled in about:config, this way "Temporary Containers" can have the coloured underlines.
