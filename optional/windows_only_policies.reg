@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox]
+"DisableDefaultBrowserAgent"=dword:00000001
+"BackgroundAppUpdate"=dword:00000001
+"DisablePocket"=dword:00000001
+"DisableProfileRefresh"=dword:00000001
+"DisableAppUpdate"=dword:00000000
+"DisableTelemetry"=dword:00000001
+"DisableFirefoxStudies"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\Certificates]
+"ImportEnterpriseRoots"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\UserMessaging]
+"FirefoxLabs"=dword:00000000
