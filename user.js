@@ -528,14 +528,6 @@ user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
   Use state of the art methods to be less identifiable
 */
 
-// Enable Firefox's built in cookie banner auto-reject
-user_pref("browser.promo.cookiebanners.enabled", true);
-user_pref("cookiebanners.ui.desktop.enabled", true);
-user_pref("cookiebanners.service.mode", 2);
-user_pref("cookiebanners.service.mode.privateBrowsing", 2);
-user_pref("cookiebanners.bannerClicking.enabled", true);
-user_pref("cookiebanners.cookieInjector.enabled", true);
-
 // Fingerprinting device features
 user_pref("media.devices.enumerate.legacy.enabled", false);
 user_pref("permissions.media.query.enabled", false);
@@ -917,4 +909,14 @@ user_pref("browser.safebrowsing.provider.google5.updateURL", "");
 
 // Don't allow clipboard data to be copied to the clipboard history/cloud, WTF Moz?
 user_pref("clipboard.copyPrivateDataToClipboardCloudOrHistory", false);
+
+/* Discontinued officially by Mozilla in January and May 2025
+To avoid issues by now broken rules these prefs will be cleared
+Please use the 4 Cookie blocking lists in uBlock Origin */
+clearPref("browser.promo.cookiebanners.enabled", true);
+clearPref("cookiebanners.ui.desktop.enabled", true);
+clearPref("cookiebanners.service.mode", 2);
+clearPref("cookiebanners.service.mode.privateBrowsing", 2);
+clearPref("cookiebanners.bannerClicking.enabled", true);
+clearPref("cookiebanners.cookieInjector.enabled", true);
 
