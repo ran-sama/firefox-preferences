@@ -31,3 +31,9 @@
 .tabbrowser-tabs .tabbrowser-tab {
   min-height: 22px !important;
 }
+/* no forced tab pinning zone on the left
+fallback could be margin-inline-end */
+#pinned-drop-indicator {
+  margin-inline-start: 22px !important;
+}
+
