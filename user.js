@@ -921,3 +921,23 @@ clearPref("cookiebanners.service.mode.privateBrowsing", 2);
 clearPref("cookiebanners.bannerClicking.enabled", true);
 clearPref("cookiebanners.cookieInjector.enabled", true);
 
+// Firefox 145 changes
+user_pref("browser.ml.smartAssist.endpoint", "");
+user_pref("browser.ml.smartAssist.enabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.spocs.onDemand", false);
+user_pref("browser.newtabpage.activity-stream.system.showWeatherOptIn", false);
+user_pref("browser.newtabpage.activity-stream.weather.optInAccepted", false);
+user_pref("browser.newtabpage.activity-stream.weather.staticData.enabled", false);
+user_pref("browser.profiles.forceEnableRefresh", false);
+user_pref("browser.search.visualSearch.featureGate", false);
+user_pref("browser.urlbar.trustPanel.featureGate", false);
+user_pref("places.semanticHistory.featureGate", false);
+
+// Disable creepy "Digital Identity wallets"
+user_pref("privacy.wallet_schemes", "");
+
+/* Monitor changes to reader settings, etc
+reader.character_spacing
+reader.word_spacing
+sidebar.animation.expand-on-hover.delay-duration-ms
+*/
