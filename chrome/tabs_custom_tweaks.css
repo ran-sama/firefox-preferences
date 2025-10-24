@@ -36,4 +36,7 @@ fallback could be margin-inline-end */
 #pinned-drop-indicator {
   margin-inline-start: 22px !important;
 }
-
+/* un-ruin the comically weird rounded tabs in 145 */
+.tab-background {
+  border-radius: 3px !important
+}
