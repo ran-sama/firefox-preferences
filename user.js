@@ -897,10 +897,12 @@ user_pref("browser.ipProtection.guardian.endpoint", "");
 // Auto-decline websites to access you LAN and localhost or shortcut creation
 user_pref("permissions.default.localhost", 2);
 user_pref("permissions.default.local-network", 2);
-user_pref("permissions.default.shortcuts", 2);
 //user_pref("permissions.desktop-notification.postPrompt.enabled", true);
 //user_pref("permissions.desktop-notification.notNow.enabled", false);
 //user_pref("permissions.fullscreen.allowed", false);
+
+// Never set this, breaks CTRL+A
+clearPref("permissions.default.shortcuts");
 
 // Remove new Google "safe"-browsing implants, we have uBlock Origin bad hosts already
 user_pref("browser.safebrowsing.provider.google5.enabled", false);
@@ -914,12 +916,12 @@ user_pref("clipboard.copyPrivateDataToClipboardCloudOrHistory", false);
 /* Discontinued officially by Mozilla in January and May 2025
 To avoid issues by now broken rules these prefs will be cleared
 EasyList+uBO cookies works, AdGuard cookies had site breakage */
-clearPref("browser.promo.cookiebanners.enabled", true);
-clearPref("cookiebanners.ui.desktop.enabled", true);
-clearPref("cookiebanners.service.mode", 2);
-clearPref("cookiebanners.service.mode.privateBrowsing", 2);
-clearPref("cookiebanners.bannerClicking.enabled", true);
-clearPref("cookiebanners.cookieInjector.enabled", true);
+clearPref("browser.promo.cookiebanners.enabled");
+clearPref("cookiebanners.ui.desktop.enabled");
+clearPref("cookiebanners.service.mode");
+clearPref("cookiebanners.service.mode.privateBrowsing");
+clearPref("cookiebanners.bannerClicking.enabled");
+clearPref("cookiebanners.cookieInjector.enabled");
 
 // Firefox 145 changes
 user_pref("browser.ml.smartAssist.endpoint", "");
@@ -941,3 +943,4 @@ reader.character_spacing
 reader.word_spacing
 sidebar.animation.expand-on-hover.delay-duration-ms
 */
+
