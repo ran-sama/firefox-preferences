@@ -40,3 +40,9 @@ fallback could be margin-inline-end */
 .tab-background {
   border-radius: 3px !important
 }
+/* remove the insane padding in 146 */
+.tabbrowser-tab:not([pinned]) {
+  padding-inline: 2px !important;
+}
+
+
