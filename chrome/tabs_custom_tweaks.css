@@ -44,5 +44,8 @@ fallback could be margin-inline-end */
 .tabbrowser-tab:not([pinned]) {
   padding-inline: 2px !important;
 }
-
+/* less round bookmark bar hover effect */
+#PlacesToolbar .bookmark-item:hover {
+  border-radius: 2px !important;
+}
 
