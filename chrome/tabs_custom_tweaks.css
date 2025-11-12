@@ -48,4 +48,13 @@ fallback could be margin-inline-end */
 #PlacesToolbar .bookmark-item:hover {
   border-radius: 2px !important;
 }
+/* less round Firefox 145 URL-bar */
+.urlbar-background,
+#searchbar {
+  border-radius: 3px !important;
+}
+.urlbar-input-container,
+#searchbar {
+  border-radius: 3px !important;
+}
 
