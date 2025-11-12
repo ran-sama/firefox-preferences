@@ -68,11 +68,11 @@ menupopup > menuitem, menupopup > menu {
 #main-window[tabsintitlebar]:not([sizemode="maximized"]):not([sizemode="fullscreen"]) #nav-bar {
   margin-top: -4px !important;
 }
-tooltip{
+tooltip {
   background-color: white !important;
   color: black !important;
 }
-:root{
+:root {
   --arrowpanel-border-radius: 0px !important;
 }
 /* Bring back green lock icon */
@@ -91,7 +91,7 @@ tooltip{
  #nav-bar #tracking-protection-icon-box {
   visibility: collapse !important;
 }
- #nav-bar #tracking-protection-icon-container {
+#nav-bar #tracking-protection-icon-container {
   display: none !important;
 }
 /* Fix Firefox 140 sidebar flyout regression */
@@ -101,3 +101,4 @@ tooltip{
   color: black !important;
 }
 */
+
