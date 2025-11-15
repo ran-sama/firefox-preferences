@@ -149,7 +149,7 @@ on Linux
 1) Close Firefox and move the user.js in your profile directory where the pref.js resides.
 2) On the next start Firefox parses the settings of the user.js and writes them into your prefs.js 
 
-## The Firefox 78 look is still possible with version 146+
+## The Firefox 78 look is still possible with version 147+
 
 ![alt text](https://raw.githubusercontent.com/ran-sama/firefox-preferences/refs/heads/master/images/classic_look_141_test.png)
 
