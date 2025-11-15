@@ -942,5 +942,16 @@ user_pref("privacy.wallet_schemes", "");
 reader.character_spacing
 reader.word_spacing
 sidebar.animation.expand-on-hover.delay-duration-ms
+browser.search.widget.new
+dom.navigation.webidl.enabled
+media.devices.enumerate.legacy.allowlist
 */
+
+// Firefox 146 changes
+user_pref("browser.urlbar.flightStatus.featureGate", false);
+user_pref("browser.urlbar.sports.featureGate", false);
+user_pref("browser.urlbar.suggest.sports", false);
+user_pref("browser.urlbar.quicksuggest.online.available", false);
+user_pref("browser.urlbar.suggest.quicksuggest.all", false);
+user_pref("places.semanticHistory.featureGate", false);
 
