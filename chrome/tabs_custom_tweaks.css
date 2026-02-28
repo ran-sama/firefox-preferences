@@ -1,0 +1,60 @@
+#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar .titlebar-buttonbox-container {
+  display: none !important;
+}
+#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar {
+  margin-top: -20px !important;
+  z-index: 1000 !important;
+}
+#main-window[tabsintitlebar][sizemode="fullscreen"] #window-controls {
+  display: none !important;
+}
+#main-window[tabsintitlebar][sizemode="maximized"] #titlebar:has(#toolbar-menubar) {
+  margin-bottom: 10px !important;
+}
+/* colored lines for containers */
+.tabbrowser-tab[usercontextid] .tab-content {
+  border-bottom: 2px solid var(--identity-icon-color) !important;
+}
+.tabbrowser-tab[usercontextid] .tab-content > * {
+  margin-bottom: -2px !important
+}
+#tabbrowser-tabs:not([overflow="true"]) ~ #alltabs-button {
+  display: none !important;
+}
+/* Firefox 135 only fix */
+#toolbar-menubar {
+  height: 29px !important; 
+}
+/* Firefox 133 only fix */
+#tabbrowser-tabs,
+#tabbrowser-tabs > #tabbrowser-arrowscrollbox,
+.tabbrowser-tabs .tabbrowser-tab {
+  min-height: 22px !important;
+}
+/* no forced tab pinning zone on the left
+fallback could be margin-inline-end */
+#pinned-drop-indicator {
+  margin-inline-start: 22px !important;
+}
+/* un-ruin the comically weird rounded tabs in 145 */
+.tab-background {
+  border-radius: 3px !important
+}
+/* remove the insane padding in 146 */
+.tabbrowser-tab:not([pinned]) {
+  padding-inline: 2px !important;
+}
+/* less round bookmark bar hover effect */
+#PlacesToolbar .bookmark-item:hover {
+  border-radius: 2px !important;
+}
+/* less round Firefox 145 URL-bar */
+.urlbar-background,
+#searchbar {
+  border-radius: 3px !important;
+}
+.urlbar-input-container,
+#searchbar {
+  border-radius: 3px !important;
+}
+
