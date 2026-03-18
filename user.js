@@ -796,6 +796,7 @@ user_pref("identity.fxaccounts.account.device.name", "Redacted");
 user_pref("browser.newtabpage.activity-stream.logowordmark.alwaysVisible", false);
 user_pref("devtools.aboutdebugging.showHiddenAddons", true);
 user_pref("browser.newtabpage.trainhopAddon.xpiBaseURL", "");
+user_pref("browser.tabs.splitView.enabled", false);
 */
 // We already declined the spying, thus we accept all TOS versions until 2030 to stop the nagging
 user_pref("browser.termsofuse.prefMigrationCheck", true);
@@ -868,4 +869,21 @@ user_pref("browser.ai.control.default", "blocked");
 /* RIP privacy: Beacons must stay enabled else few select sites load to an empty page
 this repairs beacons so important sites such as EA account management for your games work */
 clearPref("beacon.enabled");
+
+// Firefox 149 additional changes
+user_pref("browser.preferences.aiControls.showUnavailable", true);
+user_pref("browser.ai.control.linkPreviewKeyPoints", "blocked");
+user_pref("browser.ai.control.pdfjsAltText", "blocked");
+user_pref("browser.ai.control.sidebarChatbot", "blocked");
+user_pref("browser.ai.control.smartTabGroups", "blocked");
+user_pref("browser.ai.control.smartWindow", "blocked");
+user_pref("browser.ai.control.translations", "blocked");
+user_pref("browser.safebrowsing.globalCache.enabled", false);
+user_pref("browser.safebrowsing.realTime.enabled", false);
+user_pref("browser.smartwindow.enabled", false);
+user_pref("browser.smartwindow.model", "");
+user_pref("browser.smartwindow.endpoint", "");
+user_pref("browser.smartwindow.preferences.endpoint", "");
+user_pref("browser.smartwindow.memories.generateFromConversation", false);
+user_pref("browser.smartwindow.memories.generateFromConversation", false);
 
