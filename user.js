@@ -545,7 +545,7 @@ user_pref("browser.contentblocking.category", "custom");
 user_pref("privacy.fingerprintingProtection", true);
 user_pref("privacy.fingerprintingProtection.pbmode", true);
 user_pref("privacy.fingerprintingProtection.remoteOverrides.enabled", false);
-user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+WindowOuterSize,+EfficientCanvasRandomization,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLVendorRandomize,+JSLocale,+NavigatorHWConcurrency");
+user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+WindowOuterSize,+EfficientCanvasRandomization,+FontVisibilityBaseSystem,+MediaDevices,+SpeechSynthesis,+WebGLRenderInfo,+JSLocale,+NavigatorHWConcurrency");
 
 /*
   https://searchfox.org/mozilla-release/source/toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs#22
@@ -887,4 +887,25 @@ user_pref("browser.smartwindow.endpoint", "");
 user_pref("browser.smartwindow.preferences.endpoint", "");
 user_pref("browser.smartwindow.memories.generateFromConversation", false);
 user_pref("browser.smartwindow.memories.generateFromConversation", false);
+
+// Firefox 150 changes
+user_pref("browser.newtabpage.activity-stream.nova.enabled", false);
+user_pref("browser.newtabpage.activity-stream.weather.hourlyEndpoint", "");
+user_pref("browser.newtabpage.activity-stream.weather.reportEndpoint", "");
+user_pref("browser.newtabpage.activity-stream.widgets.feedback.enabled", false);
+user_pref("browser.smartwindow.memories.generateFromHistory", false);
+user_pref("browser.urlbar.merino.weather.hourlyEndpointURL", "");
+user_pref("browser.urlbar.merino.weather.reportEndpointURL", "");
+user_pref("browser.urlbar.nova.featureGate", false);
+
+// Firefox 151 changes
+user_pref("browser.nova.enabled", false);
+user_pref("browser.smartwindow.nova.enabled", false);
+user_pref("browser.urlbar.quicksuggest.ampTopPickUseNovaIconSize", false);
+user_pref("browser.smartwindow.worldcup.enabled", false);
+user_pref("browser.smartwindow.worldcup.endpointURL", "");
+user_pref("browser.urlbar.resultExplanations.featureGate", false);
+user_pref("network.trr.preconnect_on_foreground", false);
+user_pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.shortcuts.personalization.enabled", false);
 
