@@ -550,10 +550,14 @@ user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+WindowOute
 /*
   https://searchfox.org/mozilla-release/source/toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs#22
   [{"firstPartyDomain":"domain1.example.com","overrides":"-RuleA"},{"thirdPartyDomain":"domain2.example.com","overrides":"+RuleB"}]
+  
   Supported targets: firstPartyDomain, thirdPartyDomain, overrides
-  This makes fully permissive scenarios easily possible with -AllTargets disabled or fully spoofed ones with +AllTargets enabled:
+  This makes fully permissive scenarios easily possible with -AllTargets disabled or fully spoofed ones with +AllTargets enabled.
+  
+  Sadly such an exception may be required to be allowed to access most websites these days:
+  https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting
 */
-//user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"},{\"thirdPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"}]");
+user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"},{\"thirdPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"}]");
 
 /*
   Whilst no site requires WebGPU it is used already for tracking:
