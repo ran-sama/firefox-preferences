@@ -557,7 +557,7 @@ user_pref("privacy.fingerprintingProtection.overrides", "-AllTargets,+WindowOute
   Sadly such an exception may be required to be allowed to access most websites these days:
   https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting
 */
-user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"},{\"thirdPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"}]");
+user_pref("privacy.fingerprintingProtection.granularOverrides", "[{\"firstPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"},{\"thirdPartyDomain\":\"cloudflare.com\",\"overrides\":\"-AllTargets\"},{\"firstPartyDomain\":\"turnstile.workers.dev\",\"overrides\":\"-AllTargets\"},{\"thirdPartyDomain\":\"turnstile.workers.dev\",\"overrides\":\"-AllTargets\"}]");
 
 /*
   Whilst no site requires WebGPU it is used already for tracking:
