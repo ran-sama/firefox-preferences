@@ -743,7 +743,6 @@ user_pref("network.connectivity-service.enabled", false);
   PERSONAL SECTION
   Personal settings that I don't want to force on anyone
 
-
 user_pref("browser.bookmarks.defaultLocation", "menu________");
 user_pref("extensions.ui.lastCategory", "addons://updates/recent");
 user_pref("browser.cache.disk.parent_directory", "C:\\\\Users\\\\REDACTED\\\\AppData\\\\Local\\\\Temp\\\\firefox_cache");
@@ -802,6 +801,12 @@ user_pref("devtools.aboutdebugging.showHiddenAddons", true);
 user_pref("browser.newtabpage.trainhopAddon.xpiBaseURL", "");
 user_pref("browser.tabs.splitView.enabled", false);
 user_pref("security.tls.grease_http3_enable", true);
+user_pref("media.hardware-video-decoding-vulkan.enabled", true);
+user_pref("image.jxl.enabled", true);
+user_pref("network.ssl_tokens_cache_persistence", false);
+user_pref("apz.autoscroll.scroll_wheel_cooldown", 0);
+user_pref("browser.shareqrcode.embed_logo", false);
+user_pref("browser.shareqrcode.enabled", false);
 */
 // We already declined the spying, thus we accept all TOS versions until 2030 to stop the nagging
 user_pref("browser.termsofuse.prefMigrationCheck", true);
@@ -912,4 +917,36 @@ user_pref("browser.urlbar.resultExplanations.featureGate", false);
 user_pref("network.trr.preconnect_on_foreground", false);
 user_pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts", false);
 user_pref("browser.newtabpage.activity-stream.discoverystream.shortcuts.personalization.enabled", false);
+user_pref("places.frecency.pages.alternative.featureGate", false);
+user_pref("places.frecency.origins.alternative.featureGate", false);
+
+// Firefox 152 changes
+user_pref("browser.urlbar.trustPanel.breachAlerts", false);
+user_pref("browser.urlbar.trustPanel.breachAlerts.featureGate", false);
+user_pref("browser.urlbar.contextMenu.featureGate", false);
+user_pref("browser.toolbars.share-button.enabled", false);
+user_pref("browser.smartwindow.allowTables", false);
+//user_pref("browser.settings-redesign.enabled", false);
+user_pref("browser.newtabpage.activity-stream.widgets.system.sportsWidget.enabled", false);
+user_pref("browser.newtabpage.activity-stream.widgets.system.clocks.enabled", false);
+user_pref("browser.newtabpage.activity-stream.widgets.sportsWidget.live.enabled", false);
+user_pref("browser.newtabpage.activity-stream.widgets.sportsWidget.interaction", false);
+user_pref("browser.newtabpage.activity-stream.widgets.sportsWidget.enabled", false);
+user_pref("browser.newtabpage.activity-stream.sports.worldCup.matchesEndpoint", "");
+user_pref("browser.newtabpage.activity-stream.sports.worldCup.teamsEndpoint", "");
+user_pref("browser.newtabpage.activity-stream.feeds.sportsfeed", false);
+user_pref("browser.ipProtection.fxa.useActivateFlow", false);
+
+// Firefox 153 changes
+user_pref("browser.ml.embedGen.textEmbeddingFeatureModel", false);
+user_pref("browser.newtabpage.activity-stream.sports.worldCup.liveEndpoint", "");
+user_pref("browser.newtabpage.activity-stream.sports.worldCup.watchLiveEndpoint", "");
+user_pref("browser.newtabpage.activity-stream.widgets.row.expanded", false);
+user_pref("browser.newtabpage.activity-stream.widgets.sports.forceLiveDataTrustable", false);
+user_pref("browser.newtabpage.activity-stream.widgets.sportsWidget.celebrations.enabled", false);
+user_pref("extensions.formautofill.useml", false);
+//user_pref("security.qwacs.enabled", false);
+//user_pref("user_pref("widget.gtk.rounded-bottom-corners.enabled", false);
+//user_pref("widget.wayland.coordinates-scale.enabled", false);
+//user_pref("widget.wayland.native-data-session", false);
 
