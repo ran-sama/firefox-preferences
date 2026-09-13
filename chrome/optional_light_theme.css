@@ -1,0 +1,95 @@
+@import "./css/tabs/tabs_below_navigation_toolbar.css";
+@import "tabs_custom_tweaks.css";
+#editBookmarkPanelImage, #editBookmarkPanelFaviconContainer {
+  display: none !important;
+}
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* https://kb.mozillazine.org/UserChrome.css */
+#urlbar .urlbar-history-dropmarker {
+  display: none !important;
+}
+#page-action-buttons #pageActionButton {
+  display: none !important;
+}
+#PanelUI-menu-button {
+  display: none !important;
+}
+menupopup.textbox-contextmenu :-moz-any(menu,menuitem),
+popupset > menupopup :-moz-any(menu,menuitem),
+popupset >*:not(menupopup) menupopup :-moz-any(menu,menuitem),
+toolbarbutton:not(#bookmarks-menu-button):not(#alltabs-button):not(.bookmark-item)  menupopup :-moz-any(menu,menuitem),
+#PlacesToolbar :-moz-any(menu,menuitem),
+#main-menubar menupopup :-moz-any(menu,menuitem),
+#sourceeditor-context :-moz-any(menu,menuitem) {
+  -moz-appearance: none !important;
+  color: black !important;
+  background: #f2f2f2 !important;
+}
+menupopup.textbox-contextmenu :-moz-any(menu,menuitem)[_moz-menuactive="true"],
+popupset > menupopup  :-moz-any(menu,menuitem)[_moz-menuactive="true"]:not([id^="BMB"]),
+popupset > menupopup  menupopup :-moz-any(menu,menuitem)[_moz-menuactive="true"]:not([id^="BMB"]),
+popupset >*:not(menupopup) menupopup :-moz-any(menu,menuitem)[_moz-menuactive="true"],
+toolbarbutton:not(#bookmarks-menu-button):not(#alltabs-button):not(.bookmark-item)  menupopup :-moz-any(menu,menuitem)[_moz-menuactive="true"],
+#PlacesToolbar :-moz-any(menu,menuitem)[_moz-menuactive="true"],
+#main-menubar menupopup :-moz-any(menu,menuitem)[_moz-menuactive="true"],
+#sourceeditor-context :-moz-any(menu,menuitem)[_moz-menuactive="true"] {
+  -moz-appearance: none !important;
+  background-color:LightSkyBlue !important;
+/*  font-weight: bold !important;*/
+  color:black!important;
+}
+menuseparator {
+  -moz-appearance: none !important;
+  border-top: solid 1px #d7d7d7 !important;
+  margin: 0px 0px 0px 0px !important;
+}
+menupopup > menuitem, menupopup > menu {
+  padding-block: 2px !important;
+}
+#tabbrowser-tabs {
+  --tab-min-height: 22px !important;
+}
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
+  padding-bottom: 30px !important;
+}
+#navigator-toolbox {
+  border-bottom: 1px solid rgb(238,238,238) !important;
+}
+.tabbrowser-tab[soundplaying] .tab-background {
+  background-color: #cabfd9 !important;
+}
+#tabbrowser-tabs .tab-context-line {
+    display: none;
+}
+ /* Changes below are only for v102 */
+#main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: -8px !important;
+}
+#main-window[tabsintitlebar]:not([sizemode="maximized"]):not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: -4px !important;
+}
+tooltip{
+  background-color: white !important;
+  color: black !important;
+}
+:root{
+  --arrowpanel-border-radius: 0px !important;
+}
+/* Bring back green lock icon */
+#identity-box[pageproxystate="valid"].verifiedDomain #identity-icon {
+    fill: #12bc00 !important;
+    fill-opacity: 1 !important;
+    transition: 100ms linear !important;
+}
+/* Yellow override */
+#identity-box[pageproxystate="valid"].certUserOverridden #identity-icon {
+    fill: #ffe900 !important;
+    fill-opacity: 1 !important;
+    transition: 100ms linear !important;
+}
+/* Hide shield icon in URL bar */
+ #nav-bar #tracking-protection-icon-box {
+    visibility: collapse !important;
+}
+ #nav-bar #tracking-protection-icon-container {
+    display: none !important;
+}
