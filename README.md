@@ -165,7 +165,7 @@ Follow these instructions to the letter to achieve it:
 1) Set "browser.nova.enabled" to false in about:config, this way we keep the old lean Proton design.
 2) You must use the compact (dark) theme in customize toolbar menu.
 3) Install this colour palette theme: [Classic Dark ESR 78](https://addons.mozilla.org/en-US/firefox/addon/classic-dark-esr-78/) or [Classic Dark ESR 78 Blue Tab](https://addons.mozilla.org/en-US/firefox/addon/classic-esr-78-blue-tab/)
-4) This repo already provides a fully ready to use [chrome](https://github.com/ran-sama/firefox-preferences/tree/master/chrome) dir to drop into your profile folder. Credit to: [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/4.5.4) (FF159+ still works with included v4.5.4)
+4) This repo already provides a fully ready to use [chrome](https://github.com/ran-sama/firefox-preferences/tree/master/chrome) dir to drop into your profile folder. Credits for bottom tab code to: [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/4.5.4) (FF159+ still works with included v4.5.4)
 
 Future CustomCSSforFx versions may work as well, but may be subject to renamed configuration options.  
 An optional [light theme](https://raw.githubusercontent.com/ran-sama/firefox-preferences/master/chrome/optional_light_theme.css) was added to be used with [ArcticFox Light Theme](https://addons.mozilla.org/en-US/firefox/addon/arcticfox-light-theme/).
