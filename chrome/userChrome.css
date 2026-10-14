@@ -110,3 +110,8 @@ link[href="chrome://global/content/autocomplete-row-item/autocomplete-row-item.c
 	display: none !important;
 }
 */
+/* Fix Firefox 160 regression in bookmark distance padding 
+toolbarbutton.bookmark-item {
+  margin-left: 4px !important;
+}
+*/
