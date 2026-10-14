@@ -115,3 +115,8 @@ toolbarbutton.bookmark-item {
   margin-left: 4px !important;
 }
 */
+/* Fix Firefox 160 regression in bookmark bar height 
+#personal-bookmarks {
+  margin-bottom: 1px !important;
+}
+*/
