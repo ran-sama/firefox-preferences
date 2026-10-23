@@ -250,7 +250,10 @@ Send videos from Firefox to the mpv player using a toolbar button, context menu 
 #### 26. Don't track me Google ([link](https://addons.mozilla.org/en-US/firefox/addon/dont-track-me-google1/))
 Removes the annoying link-conversion at Google Search / maps / ...
 
-#### 27. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/en-US/firefox/addon/british-english-dictionary-2/))
+#### 27. {find+} ([link](https://addons.mozilla.org/en-US/firefox/addon/brandon1024-find/))
+A find-in-page extension with support for regular expressions.
+
+#### 28. British English Dictionary (Marco Pinto) ([link](https://addons.mozilla.org/en-US/firefox/addon/british-english-dictionary-2/))
 British Dictionary with 140,000+ words for basic literacy and washed online discourse.
 
 ## Pruning settings may be detrimental
